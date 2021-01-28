@@ -124,3 +124,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Adam vscode things
+*.log
+*.log.*
