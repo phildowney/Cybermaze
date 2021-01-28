@@ -128,3 +128,4 @@ $RECYCLE.BIN/
 # Adam vscode things
 *.log
 *.log.*
+**.vscode/**
