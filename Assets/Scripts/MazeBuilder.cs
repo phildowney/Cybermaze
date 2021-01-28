@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Assets.Scripts;
+using System;
 using System.Collections;
-using UnityEngine;
 using System.IO;
 using System.Linq;
-using Assets.Scripts;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 // HAY READ THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // You need to have a specific aspect ratio with pixel dimensions set for this to work AT ALL.
@@ -29,33 +29,33 @@ public class MazeBuilder : MonoBehaviour
     public GameObject Ground2Prefab;
     public Canvas Canvas;
     public PlaceableTile[] PlaceableTiles;
-    
+
     // TODO: a better way to switch plz?
     public bool Platformer = false;
 
     private const int TileScreenSize = 64;
-     
+
     private GameObject _playerTile;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         Debug.Log("Hello World");
         var allPrefabs = Resources.LoadAll<GameObject>("Prefabs");
 
-	    //if (!Platformer)
-	    //{
-	    //    PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "TopdownPlayer");
-     //       PlaceableTiles = GlobalData.TopDownTileset;
-            
-     //   }
-	    //else
-	    //{
-     //       PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "PlatformerPlayer");
-	    //    PlaceableTiles = GlobalData.PlatformerTileset;
-	    //}
+        //if (!Platformer)
+        //{
+        //    PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "TopdownPlayer");
+        //       PlaceableTiles = GlobalData.TopDownTileset;
 
-	    GlobalData.SelectedTileType = PlaceableTiles.First().TileType;
+        //   }
+        //else
+        //{
+        //       PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "PlatformerPlayer");
+        //    PlaceableTiles = GlobalData.PlatformerTileset;
+        //}
+
+        GlobalData.SelectedTileType = PlaceableTiles.First().TileType;
 
         print(allPrefabs.Length);
         //var allSprites = Resources.LoadAll<Sprite>("Sprites");
@@ -64,38 +64,38 @@ public class MazeBuilder : MonoBehaviour
         //PlaceableTiles = GlobalData.TopDownTileset;
 
         for (int i = 0; i < PlaceableTiles.Length; i++)
-	    {
-	        var tile = PlaceableTiles[i];
-	        var tileButton = Instantiate(TileButtonPrefab, new Vector3(0f, 0f, 0f), new Quaternion(), Canvas.transform);
-            
-	        var size = 75f;
-	        var spacing = 15f;
-	        var offset = spacing + size / 2f;
+        {
+            var tile = PlaceableTiles[i];
+            var tileButton = Instantiate(TileButtonPrefab, new Vector3(0f, 0f, 0f), new Quaternion(), Canvas.transform);
+
+            var size = 75f;
+            var spacing = 15f;
+            var offset = spacing + size / 2f;
 
             //tileButton.transform.localScale = new Vector3(size, size, 1f);
 
-            ((RectTransform) tileButton.transform).anchoredPosition = new Vector3(offset + (size + spacing) * i, offset);
+            ((RectTransform)tileButton.transform).anchoredPosition = new Vector3(offset + (size + spacing) * i, offset);
             tileButton.GetComponent<Image>().sprite = tile.ButtonSprite;
             tileButton.GetComponent<Button>().onClick.AddListener(() => { GlobalData.SelectedTileType = tile.TileType; });
-	        tileButton.GetComponentInChildren<Text>().text = tile.ButtonText; // TODO:  Newline support? Mebbe?
-	        tileButton.name = tile.TileType.ToString() + "TileButton";
+            tileButton.GetComponentInChildren<Text>().text = tile.ButtonText; // TODO:  Newline support? Mebbe?
+            tileButton.name = tile.TileType.ToString() + "TileButton";
             print(tileButton.GetComponentInChildren<Text>().transform.localScale);
-	    }
+        }
 
-	    // Load the level
+        // Load the level
 
-	    if (GlobalData.SerializedLevel != null)
-	    {
-	        ClearLevel();
+        if (GlobalData.SerializedLevel != null)
+        {
+            ClearLevel();
 
-	        print(GlobalData.SerializedLevel);
-	        var unescaped = GlobalData.SerializedLevel.Replace(@"\", string.Empty); // TODO: Find a better way to unescape this?
-	        GlobalData.GridTilesByCoordinates = JsonUtility.FromJson<TileDictionary>(unescaped);
+            print(GlobalData.SerializedLevel);
+            var unescaped = GlobalData.SerializedLevel.Replace(@"\", string.Empty); // TODO: Find a better way to unescape this?
+            GlobalData.GridTilesByCoordinates = JsonUtility.FromJson<TileDictionary>(unescaped);
 
-	        DrawLevel();
-	    }
-	    else
-	    {
+            DrawLevel();
+        }
+        else
+        {
             if (GlobalData.GridTilesByCoordinates == null)
             {
                 GlobalData.GridTilesByCoordinates = new SerializableDictionary<Point, CachedTile>();
@@ -105,11 +105,11 @@ public class MazeBuilder : MonoBehaviour
                 DrawLevel();
             }
         }
-	    
-	    //GlobalData.SelectedTileType = TileTypes.Floor;
+
+        //GlobalData.SelectedTileType = TileTypes.Floor;
         //AddTileAtWorldPosition(new Vector3(0f, 0f, 0f));
 
-	    _playerTile = (GameObject)Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
+        _playerTile = (GameObject)Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
         Instantiate(StartPrefab, new Vector3(0f, 0f, 0f), new Quaternion());
 
@@ -125,10 +125,10 @@ public class MazeBuilder : MonoBehaviour
         {
             print("Found tile at X: " + kvp.Key.X + " Y: " + kvp.Key.Y);
 
-            var worldPoint = new Vector3((float) kvp.Key.X, (float) kvp.Key.Y);
+            var worldPoint = new Vector3((float)kvp.Key.X, (float)kvp.Key.Y);
             var toCreate = GetPrefabFromTileType(kvp.Value.TileType);
 
-            kvp.Value.GameObject = (GameObject) Instantiate(toCreate, worldPoint, new Quaternion());
+            kvp.Value.GameObject = (GameObject)Instantiate(toCreate, worldPoint, new Quaternion());
         }
     }
 
@@ -154,7 +154,7 @@ public class MazeBuilder : MonoBehaviour
     }
 
     private Vector3 press;
-    private Vector3 delta = new Vector3(0,0);
+    private Vector3 delta = new Vector3(0, 0);
 
     // Update is called once per frame
     void Update()
@@ -204,12 +204,12 @@ public class MazeBuilder : MonoBehaviour
 
         if (scroll != 0.0f)
         {
-            Camera.main.orthographicSize -= scroll*5;
+            Camera.main.orthographicSize -= scroll * 5;
         }
 
         #endregion
 
-        if(Input.GetKeyUp(KeyCode.T))
+        if (Input.GetKeyUp(KeyCode.T))
         {
             _playerTile.transform.position = new Vector3(0f, 0f, 0f);
         }
@@ -219,41 +219,42 @@ public class MazeBuilder : MonoBehaviour
     {
         // TODO: move this to the PlayerController?
         // TODO: rename the PlayerController to TopDownPlayerController
-        if (!Platformer) { 
-        #region Player Movement
+        if (!Platformer)
+        {
+            #region Player Movement
 
-        var moveConstant = 0.12f;
-        var moved = false;
+            var moveConstant = 0.12f;
+            var moved = false;
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            _playerTile.transform.position = _playerTile.transform.position.Add(-1f*moveConstant, 0f, 0f);
-            moved = true;
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant, 0f, 0f);
-            moved = true;
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant, 0f);
-            moved = true;
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f*moveConstant, 0f);
-            moved = true;
-        }
-
-        if (moved)
-        {
-            if (Random.Range(0, CombatLikelihood) == 0)
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
-                //LoadCombat();
+                _playerTile.transform.position = _playerTile.transform.position.Add(-1f * moveConstant, 0f, 0f);
+                moved = true;
             }
-        }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant, 0f, 0f);
+                moved = true;
+            }
+
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant, 0f);
+                moved = true;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f * moveConstant, 0f);
+                moved = true;
+            }
+
+            if (moved)
+            {
+                if (Random.Range(0, CombatLikelihood) == 0)
+                {
+                    //LoadCombat();
+                }
+            }
         }
 
         #endregion
@@ -272,7 +273,7 @@ public class MazeBuilder : MonoBehaviour
 
         print("Adding new tile at X: " + newTileCoordinates.X + " Y: " + newTileCoordinates.Y);
 
-        var worldPoint = new Vector3((float) newTileCoordinates.X, (float) newTileCoordinates.Y);
+        var worldPoint = new Vector3((float)newTileCoordinates.X, (float)newTileCoordinates.Y);
         // TODO: Retire TileTypes, replace this with a PlaceableTileType? That'd be nifty...
         var newTile = (GameObject)Instantiate(GetPrefabFromTileType(GlobalData.SelectedTileType), worldPoint, new Quaternion());
         var cached = new CachedTile
@@ -306,23 +307,23 @@ public class MazeBuilder : MonoBehaviour
         var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, worldDistance);
         var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, worldDistance);
 
-        return new Point {X = newTileCoordinatesX, Y = newTileCoordinatesY};
+        return new Point { X = newTileCoordinatesX, Y = newTileCoordinatesY };
     }
 
     private static double RoundToNearest(float value, double nearest)
     {
-        return Math.Round(value/nearest)*(int) nearest;
+        return Math.Round(value / nearest) * (int)nearest;
     }
 
     private float ScreenToWorldDistance(int pixels)
     {
-        return /*PlayerCamera.orthographicSize*/ 5.625f/(Screen.height/2.0f)*pixels;
+        return /*PlayerCamera.orthographicSize*/ 5.625f / (Screen.height / 2.0f) * pixels;
     }
 
     // Used by tile selecting buttons
     public void SelectTile(string tile)
     {
-        var tileType = (TileTypes) Enum.Parse(typeof (TileTypes), tile);
+        var tileType = (TileTypes)Enum.Parse(typeof(TileTypes), tile);
 
         GlobalData.SelectedTileType = tileType;
     }
@@ -411,12 +412,13 @@ public class MazeBuilder : MonoBehaviour
     {
         yield return www;
 
-         // check for errors
+        // check for errors
         if (www.error == null)
         {
             //Debug.Log("WWW Ok!: " + www.data);
         }
-        else {
+        else
+        {
             Debug.Log("WWW Error: " + www.error);
         }
     }

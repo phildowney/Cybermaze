@@ -1,19 +1,21 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using Assets.Scripts;
 using System.Linq;
-using Assets.Scripts;
+using UnityEngine;
 
-public class DoorManager : MonoBehaviour {
+public class DoorManager : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     void OnCollisionEnter2D(Collision2D other)
     {

@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Assets.Scripts;
 using UnityEngine;
-using System.Collections;
-using Assets.Scripts;
 using UnityEngine.SceneManagement;
 
-public class TileController : MonoBehaviour {
+public class TileController : MonoBehaviour
+{
 
     public TileTypes TileType;
 
