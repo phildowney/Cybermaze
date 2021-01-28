@@ -168,13 +168,13 @@ public class MazeBuilder : MonoBehaviour
 
         if (Input.GetMouseButtonDown(2))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.farClipPlane));
+            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
             press = mouseWorldPosition + delta;
         }
 
         if (Input.GetMouseButton(2))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.farClipPlane));
+            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
 
             delta = press - mouseWorldPosition;
 
@@ -185,14 +185,14 @@ public class MazeBuilder : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.farClipPlane));
+            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
 
             AddTileAtWorldPosition(mouseWorldPosition);
         }
 
         if (Input.GetMouseButton(1))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.farClipPlane));
+            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
             RemoveTileAtWorldPosition(mouseWorldPosition);
         }
 
@@ -223,28 +223,28 @@ public class MazeBuilder : MonoBehaviour
         {
             #region Player Movement
 
-            var moveConstant = 0.12f;
+            var moveConstant = 7.2f;
             var moved = false;
 
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                _playerTile.transform.position = _playerTile.transform.position.Add(-1f * moveConstant, 0f, 0f);
+                _playerTile.transform.position = _playerTile.transform.position.Add(-1f * moveConstant * Time.deltaTime, 0f, 0f);
                 moved = true;
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
-                _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant, 0f, 0f);
+                _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant * Time.deltaTime, 0f, 0f);
                 moved = true;
             }
 
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.A))
             {
-                _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant, 0f);
+                _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant * Time.deltaTime, 0f);
                 moved = true;
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
-                _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f * moveConstant, 0f);
+                _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f * moveConstant * Time.deltaTime, 0f);
                 moved = true;
             }
 
@@ -304,8 +304,8 @@ public class MazeBuilder : MonoBehaviour
     {
         var worldDistance = ScreenToWorldDistance(TileScreenSize);
 
-        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, worldDistance);
-        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, worldDistance);
+        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, 1);
+        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, 1);
 
         return new Point { X = newTileCoordinatesX, Y = newTileCoordinatesY };
     }
