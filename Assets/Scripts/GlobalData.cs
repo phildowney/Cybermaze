@@ -11,8 +11,6 @@ namespace Assets.Scripts
         public static SerializableDictionary<Point, CachedTile> GridTilesByCoordinates { get; set; }
         public static Vector3 PlayerLocation { get; set; }
 
-        public static Character Player { get; set; }
-
         public static int KeyCount { get; set; }
         public static string SerializedLevel { get; set; }
 
