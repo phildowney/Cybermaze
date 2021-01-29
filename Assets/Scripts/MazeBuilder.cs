@@ -15,7 +15,6 @@ public class MazeBuilder : MonoBehaviour
 {
     public int count = 0;
     public bool Locked = true;
-    private int CombatLikelihood = 1000; // This is named poorly.
 
     public GameObject WallTilePrefab;
     public GameObject ExitTilePrefab;
@@ -200,36 +199,23 @@ public class MazeBuilder : MonoBehaviour
             #region Player Movement
 
             var moveConstant = 7.2f;
-            var moved = false;
 
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 _playerTile.transform.position = _playerTile.transform.position.Add(-1f * moveConstant * Time.deltaTime, 0f, 0f);
-                moved = true;
             }
             else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant * Time.deltaTime, 0f, 0f);
-                moved = true;
             }
 
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant * Time.deltaTime, 0f);
-                moved = true;
             }
             else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
                 _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f * moveConstant * Time.deltaTime, 0f);
-                moved = true;
-            }
-
-            if (moved)
-            {
-                if (Random.Range(0, CombatLikelihood) == 0)
-                {
-                    //LoadCombat();
-                }
             }
         }
 
@@ -311,13 +297,6 @@ public class MazeBuilder : MonoBehaviour
         public Sprite TileSprite;
         public Sprite ButtonSprite;
         public string ButtonText;
-    }
-
-    public void LoadCombat()
-    {
-        GlobalData.GridTilesByCoordinates = GlobalData.GridTilesByCoordinates;
-        GlobalData.PlayerLocation = _playerTile.transform.position;
-        SceneManager.LoadScene("combat");
     }
 
     public void ToggleCamera()
