@@ -237,7 +237,7 @@ public class MazeBuilder : MonoBehaviour
                 moved = true;
             }
 
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant * Time.deltaTime, 0f);
                 moved = true;
