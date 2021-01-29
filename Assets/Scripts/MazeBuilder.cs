@@ -1,4 +1,4 @@
-using Assets.Scripts;
+﻿using Assets.Scripts;
 using System;
 using System.Collections;
 using System.IO;
@@ -6,12 +6,17 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 // HAY READ THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // You need to have a specific aspect ratio with pixel dimensions set for this to work AT ALL.
 
-public class MazeBuilder : MonoBehaviour
+public interface IMazeBuilder
+{
+    void AddTileAtWorldPosition(Vector3 mouseWorldPosition);
+    void RemoveTileAtWorldPosition(Vector3 mouseWorldPosition);
+}
+
+public class MazeBuilder : MonoBehaviour, IMazeBuilder
 {
     public int count = 0;
     public bool Locked = true;
@@ -135,59 +140,13 @@ public class MazeBuilder : MonoBehaviour
     void Update()
     {
         // Apparently this will cause problems in the future: http://answers.unity3d.com/questions/784617/how-do-i-block-touch-events-from-propagating-throu.html#answer-885898
-        if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) return;
+        if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
+            return;
+        }
 
         var mouseScreenPosition = Input.mousePosition;
 
-        #region Tile Creation
-
-        if (Input.GetMouseButtonDown(2))
-        {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
-            press = mouseWorldPosition + delta;
-        }
-
-        if (Input.GetMouseButton(2))
-        {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
-
-            delta = press - mouseWorldPosition;
-
-            print("Delta" + delta);
-        }
-
-        PlayerCamera.transform.position = PlayerCamera.transform.position.Add(delta);
-
-        if (Input.GetMouseButton(0))
-        {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
-
-            AddTileAtWorldPosition(mouseWorldPosition);
-        }
-
-        if (Input.GetMouseButton(1))
-        {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
-            RemoveTileAtWorldPosition(mouseWorldPosition);
-        }
-
-        #endregion
-
-        #region Zooming
-
-        var scroll = Input.GetAxis("Mouse ScrollWheel");
-
-        if (scroll != 0.0f)
-        {
-            Camera.main.orthographicSize -= scroll * 5;
-        }
-
-        #endregion
-
-        if (Input.GetKeyUp(KeyCode.T))
-        {
-            _playerTile.transform.position = new Vector3(0f, 0f, 0f);
-        }
+        MouseInputController.HandleMazeBuilderMouseInput(mouseScreenPosition, PlayerCamera, press, delta, this);
     }
 
     void FixedUpdate()
@@ -198,7 +157,7 @@ public class MazeBuilder : MonoBehaviour
         KeysText.text = string.Format("Keys: {0}", GlobalData.KeyCount);
     }
 
-    private void AddTileAtWorldPosition(Vector3 mouseWorldPosition)
+    public void AddTileAtWorldPosition(Vector3 mouseWorldPosition)
     {
         // This leaves a padding around our floor tiles because the scaling factor nonsense is all based around our fancy 
         // PPU calculation, which doesn't work if the resolution isn't exactly 720p. Can we make this more dynamic?
@@ -220,7 +179,7 @@ public class MazeBuilder : MonoBehaviour
         GlobalData.GridTilesByCoordinates.Add(newTileCoordinates, cached);
     }
 
-    private void RemoveTileAtWorldPosition(Vector3 mouseWorldPosition)
+    public void RemoveTileAtWorldPosition(Vector3 mouseWorldPosition)
     {
         var coordinates = ScreenPositionToCoordinates(mouseWorldPosition);
 
