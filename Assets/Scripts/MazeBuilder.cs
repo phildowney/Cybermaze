@@ -40,28 +40,7 @@ public class MazeBuilder : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Debug.Log("Hello World");
-        var allPrefabs = Resources.LoadAll<GameObject>("Prefabs");
-
-        //if (!Platformer)
-        //{
-        //    PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "TopdownPlayer");
-        //       PlaceableTiles = GlobalData.TopDownTileset;
-
-        //   }
-        //else
-        //{
-        //       PlayerPrefab = allPrefabs.FirstOrDefault(p => p.name == "PlatformerPlayer");
-        //    PlaceableTiles = GlobalData.PlatformerTileset;
-        //}
-
         GlobalData.SelectedTileType = PlaceableTiles.First().TileType;
-
-        print(allPrefabs.Length);
-        //var allSprites = Resources.LoadAll<Sprite>("Sprites");
-        //print(allSprites.Length);
-        // Set up the UI
-        //PlaceableTiles = GlobalData.TopDownTileset;
 
         for (int i = 0; i < PlaceableTiles.Length; i++)
         {
@@ -105,9 +84,6 @@ public class MazeBuilder : MonoBehaviour
                 DrawLevel();
             }
         }
-
-        //GlobalData.SelectedTileType = TileTypes.Floor;
-        //AddTileAtWorldPosition(new Vector3(0f, 0f, 0f));
 
         _playerTile = (GameObject)Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
@@ -370,59 +346,7 @@ public class MazeBuilder : MonoBehaviour
         tw.Write(levelData);
 
         tw.Close();
-
-
-        // First attempt 
-
-        //var url = "http://silentmindgames.com/leveleditor/saveLevel.php";
-
-        //var form = new WWWForm();
-        //form.AddField("json", levelData);
-        //form.AddField("secureToken", "SuperSecurePassword");
-        //var www = new WWW(url, form);
-
-        //StartCoroutine(WaitForRequest(www));
-
-        // Newest
-
-        //var url = "http://silentmindgames.com/leveleditor-dev/api.php";
-
-        //var form = new WWWForm();
-
-        //Debug.Log("Save1");
-        //form.AddField("action", "saveLevel");
-        //Debug.Log("Save2");
-        //form.AddField("token", GlobalData.SecureToken);
-
-        //form.AddField("levelId", level.Id);
-        //form.AddField("levelName", level.Name);
-
-        //form.AddField("levelDescription", level.Description);
-        //form.AddField("levelData", levelData);
-        //form.AddField("userId", 1);
-
-        //Debug.Log("Save3");
-
-        //var www = new WWW(url, form);
-
-        //StartCoroutine(WaitForRequest(www));
     }
-
-    IEnumerator WaitForRequest(WWW www)
-    {
-        yield return www;
-
-        // check for errors
-        if (www.error == null)
-        {
-            //Debug.Log("WWW Ok!: " + www.data);
-        }
-        else
-        {
-            Debug.Log("WWW Error: " + www.error);
-        }
-    }
-
 
     public void LoadLevel()
     {
@@ -442,23 +366,7 @@ public class MazeBuilder : MonoBehaviour
         GlobalData.GridTilesByCoordinates = JsonUtility.FromJson<TileDictionary>(json);
 
         DrawLevel();
-
-        //StartCoroutine(DoWWW());
     }
-
-    private IEnumerator DoWWW()
-    {
-        var json = new WWW("http://silentmindgames.com/leveleditor/file.sav");
-        yield return json;
-        print(json.text);
-
-        ClearLevel();
-
-        GlobalData.GridTilesByCoordinates = JsonUtility.FromJson<TileDictionary>(json.text);
-
-        DrawLevel();
-    }
-
 
     private void ClearLevel()
     {
