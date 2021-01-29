@@ -1,4 +1,4 @@
-﻿using Assets.Scripts;
+using Assets.Scripts;
 using System;
 using System.Collections;
 using System.IO;
@@ -192,34 +192,7 @@ public class MazeBuilder : MonoBehaviour
 
     void FixedUpdate()
     {
-        // TODO: move this to the PlayerController?
-        // TODO: rename the PlayerController to TopDownPlayerController
-        if (!Platformer)
-        {
-            #region Player Movement
-
-            var moveConstant = 7.2f;
-
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            {
-                _playerTile.transform.position = _playerTile.transform.position.Add(-1f * moveConstant * Time.deltaTime, 0f, 0f);
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
-                _playerTile.transform.position = _playerTile.transform.position.Add(moveConstant * Time.deltaTime, 0f, 0f);
-            }
-
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-            {
-                _playerTile.transform.position = _playerTile.transform.position.Add(0f, moveConstant * Time.deltaTime, 0f);
-            }
-            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-            {
-                _playerTile.transform.position = _playerTile.transform.position.Add(0f, -1f * moveConstant * Time.deltaTime, 0f);
-            }
-        }
-
-        #endregion
+        PlayerController.HandePlayerMoveInput(_playerTile);
 
         var KeysText = GameObject.FindGameObjectWithTag("KeysTextTag").GetComponent<Text>();
         KeysText.text = string.Format("Keys: {0}", GlobalData.KeyCount);
