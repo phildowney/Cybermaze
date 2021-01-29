@@ -41,6 +41,8 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
     private GameObject _playerTile;
 
+    private MouseInputController mouseInputController;
+
     // Use this for initialization
     void Start()
     {
@@ -91,6 +93,8 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
         _playerTile = (GameObject)Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
+        this.mouseInputController = new MouseInputController();
+
         Instantiate(StartPrefab, new Vector3(0f, 0f, 0f), new Quaternion());
 
         FindObjectOfType<Camera>().GetComponentInChildren<SmoothCamera2D>().target = _playerTile.transform;
@@ -133,9 +137,6 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
         }
     }
 
-    private Vector3 press;
-    private Vector3 delta = new Vector3(0, 0);
-
     // Update is called once per frame
     void Update()
     {
@@ -145,8 +146,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
         }
 
         var mouseScreenPosition = Input.mousePosition;
-
-        MouseInputController.HandleMazeBuilderMouseInput(mouseScreenPosition, PlayerCamera, press, delta, this);
+        this.mouseInputController.HandleMazeBuilderMouseInput(this, PlayerCamera, mouseScreenPosition);
     }
 
     void FixedUpdate()

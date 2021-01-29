@@ -1,69 +1,41 @@
 using Assets.Scripts;
-using System;
-using System.Collections;
-using System.IO;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class MouseInputController : MonoBehaviour
+public class MouseInputController
 {
+    private Vector3 press;
+    private Vector3 delta = new Vector3(0, 0);
 
-    // Use this for initialization
-    void Start()
+    public void HandleMazeBuilderMouseInput(IMazeBuilder mazeBuilder, Camera playerCamera, Vector3 mouseScreenPosition)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // TODO: Not a static method, etc.
-    public static void HandePlayerMouseInput()
-    {
-    }
-
-    public static void HandleMazeBuilderMouseInput(Vector3 mouseScreenPosition, Camera PlayerCamera, Vector3 press, Vector3 delta, IMazeBuilder mazeBuilder)
-    {
-        #region Tile Creation
 
         if (Input.GetMouseButtonDown(2))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
+            var mouseWorldPosition = playerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, playerCamera.nearClipPlane));
             press = mouseWorldPosition + delta;
         }
 
         if (Input.GetMouseButton(2))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
+            var mouseWorldPosition = playerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, playerCamera.nearClipPlane));
 
             delta = press - mouseWorldPosition;
-
-            print("Delta" + delta);
         }
 
-        PlayerCamera.transform.position = PlayerCamera.transform.position.Add(delta);
+        playerCamera.transform.position = playerCamera.transform.position.Add(delta);
 
         if (Input.GetMouseButton(0))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
+            var mouseWorldPosition = playerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, playerCamera.nearClipPlane));
 
             mazeBuilder.AddTileAtWorldPosition(mouseWorldPosition);
         }
 
         if (Input.GetMouseButton(1))
         {
-            var mouseWorldPosition = PlayerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, PlayerCamera.nearClipPlane));
+            var mouseWorldPosition = playerCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, playerCamera.nearClipPlane));
             mazeBuilder.RemoveTileAtWorldPosition(mouseWorldPosition);
         }
-
-        #endregion
-
-        #region Zooming
 
         var scroll = Input.GetAxis("Mouse ScrollWheel");
 
@@ -71,7 +43,5 @@ public class MouseInputController : MonoBehaviour
         {
             Camera.main.orthographicSize -= scroll * 5;
         }
-
-        #endregion
     }
 }
