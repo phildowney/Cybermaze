@@ -9,7 +9,11 @@ namespace Assets.Scripts
 
         public static TileTypes SelectedTileType { get; set; }
         public static SerializableDictionary<Point, CachedTile> GridTilesByCoordinates { get; set; }
+        public static bool IsTransitioning { get; internal set; } = false;
         public static Vector3 PlayerLocation { get; set; }
+
+        // TODO: Remove PlayerLocation now? Or make it computed? or something?
+        public static GameObject PlayerObject { get; internal set; }
 
         public static int KeyCount { get; set; }
         public static string SerializedLevel { get; set; }

@@ -95,6 +95,8 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
         _playerTile = Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
+        GlobalData.PlayerObject = _playerTile;
+
         this.mouseInputController = new MouseInputController();
 
         Instantiate(StartPrefab, new Vector3(0.5f, 0.5f, 0f), new Quaternion());
@@ -238,6 +240,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
     public void ResetZoom()
     {
         Camera.main.orthographicSize = 3f;
+        Camera.main.transform.position = new Vector3(0.5f, 0.5f, -10f);
     }
 
     public void SaveLevel()
