@@ -196,22 +196,15 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
     private Point ScreenPositionToCoordinates(Vector3 newTileScreenPosition)
     {
-        var worldDistance = ScreenToWorldDistance(TileScreenSize);
-
-        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, 1);
-        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, 1);
+        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, 1.8) - 0.9;
+        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, 1.8) - 0.9;
 
         return new Point { X = newTileCoordinatesX, Y = newTileCoordinatesY };
     }
 
     private static double RoundToNearest(float value, double nearest)
     {
-        return Math.Round(value / nearest) * (int)nearest;
-    }
-
-    private float ScreenToWorldDistance(int pixels)
-    {
-        return /*PlayerCamera.orthographicSize*/ 5.625f / (Screen.height / 2.0f) * pixels;
+        return Math.Round(value / nearest) * nearest;
     }
 
     // Used by tile selecting buttons
