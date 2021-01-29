@@ -37,11 +37,11 @@ public class MouseInputController
             mazeBuilder.RemoveTileAtWorldPosition(mouseWorldPosition);
         }
 
-        var scroll = Input.GetAxis("Mouse ScrollWheel");
+        //var scroll = Input.GetAxis("Mouse ScrollWheel");
 
-        if (scroll != 0.0f)
-        {
-            Camera.main.orthographicSize -= scroll * 5;
-        }
+        //if (scroll != 0.0f)
+        //{
+        //    Camera.main.orthographicSize -= scroll * 5;
+        //}
     }
 }

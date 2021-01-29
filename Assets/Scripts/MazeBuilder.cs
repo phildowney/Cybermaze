@@ -91,11 +91,13 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
             }
         }
 
-        _playerTile = (GameObject)Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
+        GlobalData.PlayerLocation += new Vector3(0.5f, 0.5f);
+
+        _playerTile = Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
         this.mouseInputController = new MouseInputController();
 
-        Instantiate(StartPrefab, new Vector3(0f, 0f, 0f), new Quaternion());
+        Instantiate(StartPrefab, new Vector3(0.5f, 0.5f, 0f), new Quaternion());
 
         FindObjectOfType<Camera>().GetComponentInChildren<SmoothCamera2D>().target = _playerTile.transform;
 
@@ -196,8 +198,10 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
     private Point ScreenPositionToCoordinates(Vector3 newTileScreenPosition)
     {
-        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, 1.8) - 0.9;
-        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, 1.8) - 0.9;
+        // David thinks subtracting 0.5 (or 0.5 * nearest) from both X and Y will offset the tiles correctly, I think that messes with tile placement.
+        // Also of note, RoundToNearest is doing literally nothing.
+        var newTileCoordinatesX = RoundToNearest(newTileScreenPosition.x, 1);// + 0.5;
+        var newTileCoordinatesY = RoundToNearest(newTileScreenPosition.y, 1);// + 0.5;
 
         return new Point { X = newTileCoordinatesX, Y = newTileCoordinatesY };
     }
@@ -233,7 +237,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
     public void ResetZoom()
     {
-        Camera.main.orthographicSize = 5.625f;
+        Camera.main.orthographicSize = 3f;
     }
 
     public void SaveLevel()
