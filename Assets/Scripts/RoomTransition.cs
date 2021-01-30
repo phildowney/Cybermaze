@@ -60,9 +60,10 @@ public class RoomTransition : MonoBehaviour
             playerStartingPosition = playerObject.transform.position;
 
             float cameraDistanceY = 6f;
-            float cameraDistanceX = cameraDistanceY * 16f / 9f;
+            float cameraDistanceX = 11f; // 10 units + 1 more to keep the grids aligned when moving between rooms. Gap space will be filled by pillarbox effect.
             float playerDistanceY = 1.55f;
-            float playerDistanceX = playerDistanceY + 0.666667f;
+            float playerDistanceX = 2.5f;
+
             switch (direction)
             {
                 case Direction.North:
@@ -86,6 +87,8 @@ public class RoomTransition : MonoBehaviour
             _timeStartedLerping = Time.time;
 
             _isTransitioning = true;
+
+            // TODO: Disable movement while transitioning
             GlobalData.IsTransitioning = true;
         }
     }
