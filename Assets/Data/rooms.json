@@ -17,18 +17,10 @@
             "wallLeft": "fakeWall",
             "wallDown": "lockedDoor",
             "wallRight": "open",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "2",
@@ -46,18 +38,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "3",
@@ -75,18 +59,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "4",
@@ -104,18 +80,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "5",
@@ -133,18 +101,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "6",
@@ -162,18 +122,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "7",
@@ -191,18 +143,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "8",
@@ -220,18 +164,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "9",
@@ -249,18 +185,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "10",
@@ -278,18 +206,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "11",
@@ -303,22 +223,14 @@
             "duckLocation": {
                 "id": 0
             },
-            "wallUp": "",
+            "wallUp": "door",
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "19",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "12",
@@ -336,18 +248,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "13",
@@ -365,18 +269,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "14",
@@ -394,18 +290,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "15",
@@ -423,18 +311,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "16",
@@ -452,18 +332,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "17",
@@ -481,18 +353,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "18",
@@ -510,18 +374,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "19",
@@ -539,18 +395,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "20",
@@ -568,18 +416,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "21",
@@ -597,18 +437,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "22",
@@ -626,18 +458,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "23",
@@ -655,18 +479,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "24",
@@ -684,18 +500,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "25",
@@ -713,18 +521,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "26",
@@ -742,18 +542,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "27",
@@ -771,18 +563,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "28",
@@ -800,18 +584,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "29",
@@ -829,18 +605,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "30",
@@ -858,18 +626,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "31",
@@ -887,18 +647,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "32",
@@ -916,18 +668,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "33",
@@ -945,18 +689,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "34",
@@ -974,18 +710,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "35",
@@ -1003,18 +731,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "36",
@@ -1032,18 +752,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "37",
@@ -1061,18 +773,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "38",
@@ -1090,18 +794,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "39",
@@ -1119,18 +815,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "40",
@@ -1148,18 +836,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "41",
@@ -1177,18 +857,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "42",
@@ -1206,18 +878,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "43",
@@ -1235,18 +899,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "44",
@@ -1264,18 +920,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "45",
@@ -1293,18 +941,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "46",
@@ -1322,18 +962,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "47",
@@ -1351,18 +983,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "48",
@@ -1380,18 +1004,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "49",
@@ -1409,18 +1025,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "50",
@@ -1438,18 +1046,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "51",
@@ -1467,18 +1067,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "52",
@@ -1496,18 +1088,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "53",
@@ -1525,18 +1109,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "54",
@@ -1554,18 +1130,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "55",
@@ -1583,18 +1151,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "56",
@@ -1612,18 +1172,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "57",
@@ -1641,18 +1193,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "58",
@@ -1670,18 +1214,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "59",
@@ -1699,18 +1235,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "60",
@@ -1728,18 +1256,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "61",
@@ -1757,18 +1277,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "62",
@@ -1786,18 +1298,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "63",
@@ -1815,18 +1319,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "64",
@@ -1844,18 +1340,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "65",
@@ -1873,18 +1361,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "66",
@@ -1902,18 +1382,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "67",
@@ -1931,18 +1403,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "68",
@@ -1960,18 +1424,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "69",
@@ -1989,18 +1445,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "70",
@@ -2018,18 +1466,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "71",
@@ -2047,18 +1487,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "72",
@@ -2076,18 +1508,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "73",
@@ -2105,18 +1529,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "74",
@@ -2134,18 +1550,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "75",
@@ -2163,18 +1571,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "76",
@@ -2192,18 +1592,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "77",
@@ -2221,18 +1613,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "78",
@@ -2250,18 +1634,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "79",
@@ -2279,18 +1655,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "80",
@@ -2308,18 +1676,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "81",
@@ -2337,18 +1697,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "82",
@@ -2366,18 +1718,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "83",
@@ -2395,18 +1739,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "84",
@@ -2424,18 +1760,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "85",
@@ -2453,18 +1781,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "86",
@@ -2482,18 +1802,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "87",
@@ -2511,18 +1823,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "88",
@@ -2540,18 +1844,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "89",
@@ -2569,18 +1865,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "90",
@@ -2598,18 +1886,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "91",
@@ -2627,18 +1907,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "92",
@@ -2656,18 +1928,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "93",
@@ -2685,18 +1949,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "94",
@@ -2714,18 +1970,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "95",
@@ -2743,18 +1991,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "96",
@@ -2772,18 +2012,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "97",
@@ -2801,18 +2033,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         },
         {
             "id": "98",
@@ -2830,18 +2054,10 @@
             "wallLeft": "",
             "wallDown": "",
             "wallRight": "",
-            "roomUp": {
-                "id": 0
-            },
-            "roomLeft": {
-                "id": 0
-            },
-            "roomDown": {
-                "id": 0
-            },
-            "roomRight": {
-                "id": 0
-            }
+            "roomUp": "",
+            "roomLeft": "",
+            "roomDown": "",
+            "roomRight": ""
         }
     ],
     "references": {
