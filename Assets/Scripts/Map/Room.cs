@@ -9,14 +9,11 @@ public class Room
 
     public string backgroundImage;
 
-    [SerializeReference]
-    public Assets.Scripts.NullablePoint cameraLocation;
+    public Point cameraLocation;
     
-    [SerializeReference]
-    public Assets.Scripts.NullablePoint keyLocation;
+    public Point keyLocation;
 
-    [SerializeReference]
-    public Assets.Scripts.NullablePoint duckLocation;
+    public Point duckLocation;
 
     // TODO: Convert to enum
     public string wallUp;

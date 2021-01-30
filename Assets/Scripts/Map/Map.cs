@@ -71,6 +71,15 @@ public class Map
         Debug.Log("Done writing.");
     }
 
+    public static void WriteARoom(Room room) {
+        string path = Application.dataPath + "/Data/room.json";
+        
+        string outputJson = JsonUtility.ToJson(room, true);
+         StreamWriter writer = new StreamWriter(path);
+        writer.Write(outputJson);
+        writer.Close();
+    }
+
     public static Map ReadFromDataJson(string fileName) {
         string path = Application.dataPath + fileName;
         StreamReader reader = new StreamReader(path); 

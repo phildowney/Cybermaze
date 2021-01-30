@@ -40,4 +40,16 @@ public class SaveMapMenu : MonoBehaviour
         new MapLoader().LoadMap();
     }
 
+    [MenuItem("Window/write a room")]
+    public static void WriteARoom()
+    {
+//         Debug.Log("Loading Whole Map");
+//         Room room = new Room();
+//         Assets.Scripts.NullablePoint nullable = new Assets.Scripts.NullablePoint();
+// nullable.x = 100.9f;
+// nullable.y = 101.2f;
+//         room.keyLocation = nullable;
+//         Map.WriteARoom(room);
+    }
+
 }
