@@ -27,17 +27,13 @@ public class Room
 
     public string wallRight; 
 
-    [SerializeReference]
-    public Room roomUp;
+    public String roomUp;
 
-    [SerializeReference]
-    public Room roomLeft;
+    public String roomLeft;
 
-    [SerializeReference]
-    public Room roomDown;
+    public String roomDown;
 
-    [SerializeReference]
-    public Room roomRight;
+    public String roomRight;
 
     // fuckit I'm outta time!
     public string toString() {
@@ -52,7 +48,7 @@ public class Room
         }
     }
 
-    public Room Clone() {
+    public Room SparseClone() {
         Room room = new Room();
 
         room.id = (int.Parse(id) + 1).ToString();
@@ -67,7 +63,7 @@ public class Room
         return obj == null ? "null" : obj.ToString();
     }
 
-    private string uuidOrNull(Room room) {
-        return room == null ? "null" : room.id;
+    private string uuidOrNull(String room) {
+        return room == null ? "null" : room;
     }
 }

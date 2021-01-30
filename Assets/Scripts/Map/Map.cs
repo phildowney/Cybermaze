@@ -56,7 +56,7 @@ public class Map
         Room room = map.rooms.First();
 
         for (int i = 2; i < 99; ++i) {
-            room = room.Clone();
+            room = room.SparseClone();
             map.rooms.Add(room);
         }
 
