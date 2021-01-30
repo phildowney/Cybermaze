@@ -5,10 +5,16 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
+// See map.csv
+// Represents a 2D array of either a room id or __ (no room)
+// Corresponding rooms and their ids are defined in rooms.json, Map.cs and Room.cs
 public class MapRoomLayout
 {
     private const string CSV_FILE_PATH = "/Data/map.csv";
 
+    // [0,0]...[0,14] is row 1 (empty)
+    // [16,0]...[16,14] is the last row (empty)
+    // So starting room (11) is at [12,9].
     private string[,] mapLayout;
 
     public static MapRoomLayout ReadFromCSV()
