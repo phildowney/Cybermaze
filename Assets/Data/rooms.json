@@ -5,13 +5,16 @@
             "id": "1",
             "backgroundImage": "background_r_1.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "door",
             "wallLeft": "fakeWall",
@@ -26,13 +29,16 @@
             "id": "2",
             "backgroundImage": "background_r_2.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -47,13 +53,16 @@
             "id": "3",
             "backgroundImage": "background_r_3.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -68,13 +77,16 @@
             "id": "4",
             "backgroundImage": "background_r_4.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -89,13 +101,16 @@
             "id": "5",
             "backgroundImage": "background_r_5.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -110,13 +125,16 @@
             "id": "6",
             "backgroundImage": "background_r_6.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -131,13 +149,16 @@
             "id": "7",
             "backgroundImage": "background_r_7.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -152,13 +173,16 @@
             "id": "8",
             "backgroundImage": "background_r_8.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -173,13 +197,16 @@
             "id": "9",
             "backgroundImage": "background_r_9.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -194,13 +221,16 @@
             "id": "10",
             "backgroundImage": "background_r_10.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -215,13 +245,16 @@
             "id": "11",
             "backgroundImage": "background_r_11.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "door",
             "wallLeft": "",
@@ -236,13 +269,16 @@
             "id": "12",
             "backgroundImage": "background_r_12.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -257,13 +293,16 @@
             "id": "13",
             "backgroundImage": "background_r_13.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -278,13 +317,16 @@
             "id": "14",
             "backgroundImage": "background_r_14.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -299,13 +341,16 @@
             "id": "15",
             "backgroundImage": "background_r_15.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -320,13 +365,16 @@
             "id": "16",
             "backgroundImage": "background_r_16.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -341,13 +389,16 @@
             "id": "17",
             "backgroundImage": "background_r_17.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -362,13 +413,16 @@
             "id": "18",
             "backgroundImage": "background_r_18.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -383,13 +437,16 @@
             "id": "19",
             "backgroundImage": "background_r_19.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -404,13 +461,16 @@
             "id": "20",
             "backgroundImage": "background_r_20.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -425,13 +485,16 @@
             "id": "21",
             "backgroundImage": "background_r_21.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -446,13 +509,16 @@
             "id": "22",
             "backgroundImage": "background_r_22.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -467,13 +533,16 @@
             "id": "23",
             "backgroundImage": "background_r_23.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -488,13 +557,16 @@
             "id": "24",
             "backgroundImage": "background_r_24.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -509,13 +581,16 @@
             "id": "25",
             "backgroundImage": "background_r_25.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -530,13 +605,16 @@
             "id": "26",
             "backgroundImage": "background_r_26.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -551,13 +629,16 @@
             "id": "27",
             "backgroundImage": "background_r_27.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -572,13 +653,16 @@
             "id": "28",
             "backgroundImage": "background_r_28.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -593,13 +677,16 @@
             "id": "29",
             "backgroundImage": "background_r_29.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -614,13 +701,16 @@
             "id": "30",
             "backgroundImage": "background_r_30.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -635,13 +725,16 @@
             "id": "31",
             "backgroundImage": "background_r_31.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -656,13 +749,16 @@
             "id": "32",
             "backgroundImage": "background_r_32.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -677,13 +773,16 @@
             "id": "33",
             "backgroundImage": "background_r_33.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -698,13 +797,16 @@
             "id": "34",
             "backgroundImage": "background_r_34.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -719,13 +821,16 @@
             "id": "35",
             "backgroundImage": "background_r_35.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -740,13 +845,16 @@
             "id": "36",
             "backgroundImage": "background_r_36.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -761,13 +869,16 @@
             "id": "37",
             "backgroundImage": "background_r_37.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -782,13 +893,16 @@
             "id": "38",
             "backgroundImage": "background_r_38.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -803,13 +917,16 @@
             "id": "39",
             "backgroundImage": "background_r_39.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -824,13 +941,16 @@
             "id": "40",
             "backgroundImage": "background_r_40.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -845,13 +965,16 @@
             "id": "41",
             "backgroundImage": "background_r_41.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -866,13 +989,16 @@
             "id": "42",
             "backgroundImage": "background_r_42.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -887,13 +1013,16 @@
             "id": "43",
             "backgroundImage": "background_r_43.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -908,13 +1037,16 @@
             "id": "44",
             "backgroundImage": "background_r_44.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -929,13 +1061,16 @@
             "id": "45",
             "backgroundImage": "background_r_45.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -950,13 +1085,16 @@
             "id": "46",
             "backgroundImage": "background_r_46.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -971,13 +1109,16 @@
             "id": "47",
             "backgroundImage": "background_r_47.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -992,13 +1133,16 @@
             "id": "48",
             "backgroundImage": "background_r_48.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1013,13 +1157,16 @@
             "id": "49",
             "backgroundImage": "background_r_49.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1034,13 +1181,16 @@
             "id": "50",
             "backgroundImage": "background_r_50.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1055,13 +1205,16 @@
             "id": "51",
             "backgroundImage": "background_r_51.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1076,13 +1229,16 @@
             "id": "52",
             "backgroundImage": "background_r_52.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1097,13 +1253,16 @@
             "id": "53",
             "backgroundImage": "background_r_53.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1118,13 +1277,16 @@
             "id": "54",
             "backgroundImage": "background_r_54.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1139,13 +1301,16 @@
             "id": "55",
             "backgroundImage": "background_r_55.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1160,13 +1325,16 @@
             "id": "56",
             "backgroundImage": "background_r_56.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1181,13 +1349,16 @@
             "id": "57",
             "backgroundImage": "background_r_57.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1202,13 +1373,16 @@
             "id": "58",
             "backgroundImage": "background_r_58.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1223,13 +1397,16 @@
             "id": "59",
             "backgroundImage": "background_r_59.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1244,13 +1421,16 @@
             "id": "60",
             "backgroundImage": "background_r_60.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1265,13 +1445,16 @@
             "id": "61",
             "backgroundImage": "background_r_61.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1286,13 +1469,16 @@
             "id": "62",
             "backgroundImage": "background_r_62.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1307,13 +1493,16 @@
             "id": "63",
             "backgroundImage": "background_r_63.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1328,13 +1517,16 @@
             "id": "64",
             "backgroundImage": "background_r_64.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1349,13 +1541,16 @@
             "id": "65",
             "backgroundImage": "background_r_65.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1370,13 +1565,16 @@
             "id": "66",
             "backgroundImage": "background_r_66.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1391,13 +1589,16 @@
             "id": "67",
             "backgroundImage": "background_r_67.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1412,13 +1613,16 @@
             "id": "68",
             "backgroundImage": "background_r_68.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1433,13 +1637,16 @@
             "id": "69",
             "backgroundImage": "background_r_69.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1454,13 +1661,16 @@
             "id": "70",
             "backgroundImage": "background_r_70.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1475,13 +1685,16 @@
             "id": "71",
             "backgroundImage": "background_r_71.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1496,13 +1709,16 @@
             "id": "72",
             "backgroundImage": "background_r_72.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1517,13 +1733,16 @@
             "id": "73",
             "backgroundImage": "background_r_73.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1538,13 +1757,16 @@
             "id": "74",
             "backgroundImage": "background_r_74.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1559,13 +1781,16 @@
             "id": "75",
             "backgroundImage": "background_r_75.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1580,13 +1805,16 @@
             "id": "76",
             "backgroundImage": "background_r_76.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1601,13 +1829,16 @@
             "id": "77",
             "backgroundImage": "background_r_77.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1622,13 +1853,16 @@
             "id": "78",
             "backgroundImage": "background_r_78.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1643,13 +1877,16 @@
             "id": "79",
             "backgroundImage": "background_r_79.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1664,13 +1901,16 @@
             "id": "80",
             "backgroundImage": "background_r_80.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1685,13 +1925,16 @@
             "id": "81",
             "backgroundImage": "background_r_81.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1706,13 +1949,16 @@
             "id": "82",
             "backgroundImage": "background_r_82.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1727,13 +1973,16 @@
             "id": "83",
             "backgroundImage": "background_r_83.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1748,13 +1997,16 @@
             "id": "84",
             "backgroundImage": "background_r_84.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1769,13 +2021,16 @@
             "id": "85",
             "backgroundImage": "background_r_85.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1790,13 +2045,16 @@
             "id": "86",
             "backgroundImage": "background_r_86.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1811,13 +2069,16 @@
             "id": "87",
             "backgroundImage": "background_r_87.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1832,13 +2093,16 @@
             "id": "88",
             "backgroundImage": "background_r_88.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1853,13 +2117,16 @@
             "id": "89",
             "backgroundImage": "background_r_89.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1874,13 +2141,16 @@
             "id": "90",
             "backgroundImage": "background_r_90.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1895,13 +2165,16 @@
             "id": "91",
             "backgroundImage": "background_r_91.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1916,13 +2189,16 @@
             "id": "92",
             "backgroundImage": "background_r_92.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1937,13 +2213,16 @@
             "id": "93",
             "backgroundImage": "background_r_93.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1958,13 +2237,16 @@
             "id": "94",
             "backgroundImage": "background_r_94.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -1979,13 +2261,16 @@
             "id": "95",
             "backgroundImage": "background_r_95.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -2000,13 +2285,16 @@
             "id": "96",
             "backgroundImage": "background_r_96.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -2021,13 +2309,16 @@
             "id": "97",
             "backgroundImage": "background_r_97.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -2042,13 +2333,16 @@
             "id": "98",
             "backgroundImage": "background_r_98.png",
             "cameraLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "keyLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "duckLocation": {
-                "id": 0
+                "X": 0.0,
+                "Y": 0.0
             },
             "wallUp": "",
             "wallLeft": "",
@@ -2059,24 +2353,5 @@
             "roomDown": "",
             "roomRight": ""
         }
-    ],
-    "references": {
-        "version": 1,
-        "00000000": {
-            "type": {
-                "class": "",
-                "ns": "",
-                "asm": ""
-            },
-            "data": {}
-        },
-        "00000001": {
-            "type": {
-                "class": "Terminus",
-                "ns": "UnityEngine.DMAT",
-                "asm": "FAKE_ASM"
-            },
-            "data": {}
-        }
-    }
+    ]
 }
