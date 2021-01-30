@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class HuePulse : MonoBehaviour
 {
-    public Color colourOne = new Color(200, 100, 100);
-    public Color colourTwo = new Color(100, 200, 100);
+    public float startHue = 0;
+    public float endHue = 100;
+    public float shiftDuration = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,8 @@ public class HuePulse : MonoBehaviour
     void Update()
     {
         Renderer renderer = gameObject.GetComponent<Renderer>();
-        Color color = Color.Lerp(colourOne, colourTwo, Mathf.PingPong(Time.time/3, 1));
-        renderer.material.SetColor("_Color", color);
+        float hueShift = Mathf.Lerp(startHue, endHue, Mathf.PingPong(Time.time/shiftDuration, 1));
+        renderer.material.SetFloat("_HueShift", hueShift);
     }
 }
+
