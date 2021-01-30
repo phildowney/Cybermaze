@@ -1,0 +1,16 @@
+{
+    "startRoom": "11",
+    "rooms": [
+        {
+            "id": "1",
+            "backgroundImage": "background_r_1.png",
+            "cameraLocation": "15,15",
+            "keyLocation": "7,29",
+            "duckLocation": "14,3",
+            "wallUp": "door",
+            "wallLeft": "fakeWall",
+            "wallDown": "lockedDoor",
+            "wallRight": "open"
+        }
+    ]
+}
