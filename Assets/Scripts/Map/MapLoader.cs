@@ -10,6 +10,15 @@ using UnityEngine;
 // https://docs.unity3d.com/Manual/class-ScriptableObject.html
 public class MapLoader : MonoBehaviour
 {
+    // How big are the Room Prefabs supposed to be, and where do we place them next to each other?
+    // e.g. prefab 1 at 0, prefab 2 at 1921, prefab 3 at 1920*3+2, etc.
+    // TODO: Scale appropriately?
+    private const int ROOM_SIZE_X = 10; // 10 units in editor
+    private const int ROOM_SIZE_Y = 6;
+
+    // Place first prefab at these coordinates, then the rest are oriented around that one based on the map CSV.
+    private const string MAP_ORIGIN_GAMEOBJECT_NAME = "EntireMap";
+
     public GameObject roomPrefab; 
 
     public void LoadMap()
@@ -40,14 +49,40 @@ public class MapLoader : MonoBehaviour
     private Dictionary<string, GameObject> createRoomPrefabsForData(List<Room> rooms, MapRoomLayout mapRoomLayout) {
         Dictionary<string, GameObject> roomPrefabs = new Dictionary<string, GameObject>();
 
+        GameObject originGameObject = GameObject.Find(MAP_ORIGIN_GAMEOBJECT_NAME);
+        Vector3 originPosition = originGameObject.transform.position;
+        Point firstRoomPosition = mapRoomLayout.findRoomPosition("1");
+
         rooms.ForEach(room => {
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
+
+            // Here's where we configure the prefab to have the room data, the correct image, position it correctly in the world, etc.
+            // We could also set the tiles (walls/doors/ducks) here, or do that later.
             RoomBehaviour roomBehaviour = prefabInstance.GetComponent<RoomBehaviour>();
             roomBehaviour.room = room;
             roomBehaviour.mapArrayPosition = mapRoomLayout.findRoomPosition(room.id);
+            AssignCorrectPrefabPosition(roomBehaviour, originPosition, firstRoomPosition);
+
             roomPrefabs.Add(room.id, prefabInstance);
         });
 
         return roomPrefabs;
+    }
+
+    // Orient prefabs around the position of room 1 
+    private void AssignCorrectPrefabPosition(
+        RoomBehaviour roomBehaviour,
+        Vector3 originPosition,
+        Point firstRoomPosition
+    ) {
+        Point mapArrayPosition = roomBehaviour.mapArrayPosition;
+
+        // A room at 3,5 is 3 map sizes to the right of 0, 5 map sizes up from 0, 
+        float desiredRoomOriginX = (float)(mapArrayPosition.X * ROOM_SIZE_X);// + mapArrayPosition.X; for off-by-one offset?
+        float desiredRoomOriginY = (float)(mapArrayPosition.Y * ROOM_SIZE_Y);// + mapArrayPosition.Y;
+
+        GameObject roomPrefab = roomBehaviour.gameObject;
+        Vector3 newPosition = new Vector3(desiredRoomOriginX, desiredRoomOriginY, roomPrefab.transform.position.z);
+        roomPrefab.transform.position = newPosition; 
     }
 }

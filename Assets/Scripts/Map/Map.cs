@@ -17,7 +17,7 @@ public class Map
     [NonSerialized]
     private Dictionary<string, Room> roomById = new Dictionary<string, Room>();
 
-     public string toString() {
+    public string toString() {
         StringBuilder sb = new StringBuilder();
         
         foreach (var room in rooms)
