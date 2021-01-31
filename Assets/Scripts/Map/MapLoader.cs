@@ -57,6 +57,7 @@ public class MapLoader : MonoBehaviour
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
             prefabInstance.transform.SetParent(originGameObject.transform);
             prefabInstance.name = "Room " + room.id;
+            prefabInstance.tag = "Room Clone";
 
             // Here's where we configure the prefab to have the room data, the correct image, position it correctly in the world, etc.
             // We could also set the tiles (walls/doors/ducks) here, or do that later.
