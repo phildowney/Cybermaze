@@ -18,6 +18,7 @@ public class RoomBehaviour : MonoBehaviour
     public double yPositionCopyForEditor;
     public string roomIdCopyForEditor;
     public string backgroundImageKeyForEditor;
+    public string borderImageKeyForEditor;
 
     public string getId() {
         return room.id;
@@ -31,6 +32,18 @@ public class RoomBehaviour : MonoBehaviour
         var west = room.wallLeft != string.Empty ? "w" : "";
 
         return north + east + south + west;
+    }
+
+    public string CalculateRevisedBackgroundImageName()
+    {
+        string baseImageKey = this.CalculateBackgroundImage();
+        return "new_" + baseImageKey;
+    }
+
+    public string CalculateRevisedBackgroundImageBorderName()
+    {
+        string baseImageKey = this.CalculateBackgroundImage();
+        return "border_" + baseImageKey;
     }
 
     public Point getCameraLocation() {

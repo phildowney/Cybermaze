@@ -24,12 +24,14 @@ public class MapLoader : MonoBehaviour
 
     private const string DUCK_CHILD_GAMEOBJECT_NAME = "Kid";
 
+    private const string BORDER_GAMEOBJECT_NAME = "border";
+
     public GameObject roomPrefab; 
 
     public void LoadMap()
     {
         // Load floor sprites.
-        this.allSprites = Resources.LoadAll<Sprite>("Sprites");
+        this.allSprites = Resources.LoadAll<Sprite>("Sprites/REVISED");
 
         // Load data files
         MapRoomLayout mapRoomLayout = MapRoomLayout.ReadFromCSV();
@@ -78,6 +80,7 @@ public class MapLoader : MonoBehaviour
             AssignCorrectPrefabPosition(roomBehaviour, originPosition, firstRoomPosition);
 
             CalculateAndSetBackgroundImage(roomBehaviour);
+            CalculateAndSetBackgroundImageBorder(roomBehaviour);
             roomPrefabs.Add(room.id, prefabInstance);
         });
 
@@ -88,7 +91,7 @@ public class MapLoader : MonoBehaviour
 
     private void CalculateAndSetBackgroundImage(RoomBehaviour roomBehaviour)
     { 
-        string imageKey = roomBehaviour.CalculateBackgroundImage();
+        string imageKey = roomBehaviour.CalculateRevisedBackgroundImageName();
         GameObject roomPrefab = roomBehaviour.gameObject;
         SpriteRenderer renderer = roomPrefab.GetComponent<SpriteRenderer>();
         Sprite floorSprite = Array.Find<Sprite>(
@@ -106,6 +109,40 @@ public class MapLoader : MonoBehaviour
         renderer.sprite = floorSprite;
 
         roomBehaviour.backgroundImageKeyForEditor = imageKey;
+    }
+
+    private void CalculateAndSetBackgroundImageBorder(RoomBehaviour roomBehaviour)
+    {
+        string imageKey = roomBehaviour.CalculateRevisedBackgroundImageBorderName();
+        
+        GameObject roomPrefab = roomBehaviour.gameObject;
+        Transform borderTransform = roomPrefab.transform.Find(BORDER_GAMEOBJECT_NAME);
+
+        if (borderTransform == null) {
+            Debug.LogError("Could not find border for room " + roomBehaviour.room);
+            return;
+        }
+
+        GameObject borderObject = borderTransform.gameObject;
+        SpriteRenderer renderer = borderObject.GetComponent<SpriteRenderer>();
+        
+        Sprite borderSprite = Array.Find<Sprite>(
+            this.allSprites,
+            sprite => sprite.name == imageKey
+        );
+
+        if (borderSprite == null) {
+            borderSprite = Array.Find<Sprite>(
+                this.allSprites,
+                sprite => sprite.name == FLOOR_NOT_FOUND_SPRITE_NAME
+            );
+        }
+
+        renderer.sprite = borderSprite;
+
+        borderTransform.localScale -= new Vector3(0.45f, 0.45f, 1);
+
+        roomBehaviour.borderImageKeyForEditor = imageKey;
     }
 
     private void activateWalls(Room room, GameObject prefabInstance)
