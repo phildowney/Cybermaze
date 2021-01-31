@@ -13,7 +13,7 @@ public class MapLoader : MonoBehaviour
     // How big are the Room Prefabs supposed to be, and where do we place them next to each other?
     // e.g. prefab 1 at 0, prefab 2 at 1921, prefab 3 at 1920*3+2, etc.
     // TODO: Scale appropriately?
-    private const int ROOM_SIZE_X = 10; // 10 units in editor
+    private const int ROOM_SIZE_X = 11; // 10 units in editor
     private const int ROOM_SIZE_Y = 6;
 
     // Place first prefab at these coordinates, then the rest are oriented around that one based on the map CSV.
