@@ -108,19 +108,19 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
                     {
                         case ExitClickedArgs.Directions.North:
                             map.rooms[int.Parse(clickedRoom.Index)].roomUp = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomUp = clickedRoom.Index;
+                            map.rooms[int.Parse(matchingRoom.Index)].roomDown = clickedRoom.Index;
                             break;
                         case ExitClickedArgs.Directions.South:
                             map.rooms[int.Parse(clickedRoom.Index)].roomDown = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomDown = clickedRoom.Index;
+                            map.rooms[int.Parse(matchingRoom.Index)].roomUp = clickedRoom.Index;
                             break;
                         case ExitClickedArgs.Directions.East:
                             map.rooms[int.Parse(clickedRoom.Index)].roomRight = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomRight = clickedRoom.Index;
+                            map.rooms[int.Parse(matchingRoom.Index)].roomLeft = clickedRoom.Index;
                             break;
                         case ExitClickedArgs.Directions.West:
-                            map.rooms[int.Parse(clickedRoom.Index)].roomDown = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomDown = clickedRoom.Index;
+                            map.rooms[int.Parse(clickedRoom.Index)].roomLeft = matchingRoom.Index;
+                            map.rooms[int.Parse(matchingRoom.Index)].roomRight = clickedRoom.Index;
                             break;
                         default:
                             return;
@@ -218,7 +218,7 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var jsonString = JsonSerializer.Serialize(map, new JsonSerializerOptions { IncludeFields = true });
+            var jsonString = JsonSerializer.Serialize(map, new JsonSerializerOptions { IncludeFields = true, WriteIndented = true });
             File.WriteAllText("rooms.json", jsonString);
         }
     }
