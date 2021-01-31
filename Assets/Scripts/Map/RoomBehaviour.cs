@@ -41,7 +41,7 @@ public class RoomBehaviour : MonoBehaviour
         return room.keyLocation;
     }
 
-    public Point getDuckLocation() {
+    public bool getDuckLocation() {
         return room.duckLocation;
     }
 
