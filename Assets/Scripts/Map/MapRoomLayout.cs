@@ -53,7 +53,7 @@ public class MapRoomLayout
 
         Debug.Log("map csv is: " + mapLayout.ToString());
 
-        sanitizeSingleDigitNumbers(mapLayout);
+        SanitizeSingleDigitNumbers(mapLayout);
 
         MapRoomLayout mapRoomLayout = new MapRoomLayout();
         mapRoomLayout.mapLayout = mapLayout;
@@ -61,7 +61,7 @@ public class MapRoomLayout
         return mapRoomLayout;
     }
 
-    private static void sanitizeSingleDigitNumbers(string[,] map)
+    private static void SanitizeSingleDigitNumbers(string[,] map)
     {
         for (int i=0; i < map.GetLength(0); i++)
         {
