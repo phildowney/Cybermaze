@@ -10,6 +10,7 @@ public class DucklingManager : MonoBehaviour
     private float jumpHeight = 0.003f;
     private float jumpSpeed = 3.0f;
     public HashSet<GameObject> ducklings = new HashSet<GameObject>();
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,7 @@ public class DucklingManager : MonoBehaviour
     {
         if (other.CompareTag("Duckling"))
         {
+            audio.Play();
             other.enabled = false;
             ducklings.Add(other.gameObject);
         }
