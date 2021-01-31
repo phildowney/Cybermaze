@@ -12,6 +12,12 @@ public class RoomBehaviour : MonoBehaviour
 
     public Point mapArrayPosition { get; set; }
 
+    // Instantiation copies for inspecting in unityeditor. Don't assign to these. Don't rely on these.
+    // See MapLoader.cs#createRoomPrefabsForData()
+    public double xPositionCopyForEditor;
+    public double yPositionCopyForEditor;
+    public string roomIdCopyForEditor;
+
     public string getId() {
         return room.id;
     }
