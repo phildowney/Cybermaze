@@ -58,4 +58,54 @@ public class Room
     private string toStringOrNull(object obj) {
         return obj == null ? "null" : obj.ToString();
     }
+
+    public string GetBackgroundImage()
+    {
+        var north = wallUp != string.Empty ? "n" : "";
+        var east = wallRight != string.Empty ? "e" : "";
+        var south = wallDown != string.Empty ? "s" : "";
+        var west = wallLeft != string.Empty ? "w" : "";
+
+        return north + east + south + west;
+    }
+
+    //if (wallUp == string.Empty && wallRight == string.Empty && wallDown == string.Empty && wallLeft == string.Empty)
+    //{
+    //    return "";
+    //}
+
+    //if (wallUp != string.Empty && wallRight == string.Empty && wallDown == string.Empty && wallLeft == string.Empty)
+    //{
+    //    return "n.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight != string.Empty && wallDown == string.Empty && wallLeft == string.Empty)
+    //{
+    //    return "ne.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight != string.Empty && wallDown != string.Empty && wallLeft == string.Empty)
+    //{
+    //    return "new.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight != string.Empty && wallDown != string.Empty && wallLeft != string.Empty)
+    //{
+    //    return "news.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight == string.Empty && wallDown != string.Empty && wallLeft == string.Empty)
+    //{
+    //    return "ns.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight == string.Empty && wallDown != string.Empty && wallLeft != string.Empty)
+    //{
+    //    return "nsw.png";
+    //}
+
+    //if (wallUp != string.Empty && wallRight == string.Empty && wallDown != string.Empty && wallLeft != string.Empty)
+    //{
+    //    return "nsw.png";
+    //}
 }

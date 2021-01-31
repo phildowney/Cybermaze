@@ -230,6 +230,15 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
             var jsonString = JsonSerializer.Serialize(map, new JsonSerializerOptions { IncludeFields = true, WriteIndented = true });
             File.WriteAllText("rooms.json", jsonString);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach(var room in map.rooms)
+            {
+                var id = room.id;
+                var bgimg = room.GetBackgroundImage();
+            }
+        }
     }
 
     
