@@ -12,10 +12,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "",
@@ -36,10 +33,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -60,10 +54,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "door",
@@ -84,10 +75,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -108,10 +96,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -132,10 +117,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -156,10 +138,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "",
@@ -180,10 +159,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "door",
         "wallDown": "door",
@@ -204,10 +180,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "",
@@ -228,10 +201,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -252,10 +222,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -276,10 +243,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -300,10 +264,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "door",
@@ -324,10 +285,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "door",
@@ -348,10 +306,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "door",
         "wallDown": "door",
@@ -372,10 +327,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "door",
         "wallDown": "",
@@ -396,10 +348,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -420,10 +369,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -444,10 +390,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -468,10 +411,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -492,10 +432,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -516,10 +453,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "door",
@@ -540,10 +474,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -564,10 +495,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -588,10 +516,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -612,10 +537,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -636,10 +558,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -660,10 +579,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -684,10 +600,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -708,10 +621,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -732,10 +642,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -756,10 +663,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -780,10 +684,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -804,10 +705,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "door",
         "wallLeft": "",
         "wallDown": "door",
@@ -828,10 +726,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -852,10 +747,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -876,10 +768,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -900,10 +789,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -924,10 +810,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -948,10 +831,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -972,10 +852,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -996,10 +873,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1020,10 +894,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1044,10 +915,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1068,10 +936,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "door",
@@ -1092,10 +957,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1116,10 +978,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1140,10 +999,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1164,10 +1020,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1188,10 +1041,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1212,10 +1062,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1236,10 +1083,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1260,10 +1104,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1284,10 +1125,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1308,10 +1146,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1332,10 +1167,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1356,10 +1188,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1380,10 +1209,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1404,10 +1230,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1428,10 +1251,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1452,10 +1272,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1476,10 +1293,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1500,10 +1314,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1524,10 +1335,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1548,10 +1356,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1572,10 +1377,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1596,10 +1398,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1620,10 +1419,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1644,10 +1440,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1668,10 +1461,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1692,10 +1482,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1716,10 +1503,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1740,10 +1524,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1764,10 +1545,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1788,10 +1566,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1812,10 +1587,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1836,10 +1608,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1860,10 +1629,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1884,10 +1650,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1908,10 +1671,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1932,10 +1692,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1956,10 +1713,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -1980,10 +1734,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2004,10 +1755,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2028,10 +1776,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2052,10 +1797,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2076,10 +1818,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2100,10 +1839,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2124,10 +1860,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2148,10 +1881,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2172,10 +1902,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2196,10 +1923,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2220,10 +1944,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2244,10 +1965,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2268,10 +1986,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2292,10 +2007,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2316,10 +2028,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",
@@ -2340,10 +2049,7 @@
           "X": 0,
           "Y": 0
         },
-        "duckLocation": {
-          "X": 0,
-          "Y": 0
-        },
+        "duckLocation": false,
         "wallUp": "",
         "wallLeft": "",
         "wallDown": "",

@@ -6,7 +6,7 @@
             "backgroundImage": "background_r_1.png",
             "cameraLocation": "15,15",
             "keyLocation": "7,29",
-            "duckLocation": "14,3",
+            "duckLocation": "false",
             "wallUp": "door",
             "wallLeft": "fakeWall",
             "wallDown": "lockedDoor",
