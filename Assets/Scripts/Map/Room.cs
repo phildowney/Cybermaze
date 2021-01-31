@@ -24,21 +24,21 @@ public class Room
 
     public string wallRight; 
 
-    public String roomUp;
+    public string roomUp;
 
-    public String roomLeft;
+    public string roomLeft;
 
-    public String roomDown;
+    public string roomDown;
 
-    public String roomRight;
+    public string roomRight;
 
     // fuckit I'm outta time!
     public string toString() {
         try {
             return "id: " + id + " backgroundImage: " + backgroundImage + " cameraLocation: " + toStringOrNull(cameraLocation) + " keyLocation: " +
                 toStringOrNull(keyLocation) + " duckLocation " + toStringOrNull(duckLocation) + " wallUp " + wallUp + " wallLeft " + wallLeft + " wallDown " +
-                wallDown + " wallRight " + wallRight + " roomUp " + uuidOrNull(roomUp) + " roomLeft " + uuidOrNull(roomLeft) +
-                " roomDown " + uuidOrNull(roomDown) + " roomRight " + uuidOrNull(roomRight);
+                wallDown + " wallRight " + wallRight + " roomUp " + roomUp + " roomLeft " + roomLeft +
+                " roomDown " + roomDown + " roomRight " + roomRight;
         } catch (NullReferenceException e) {
             Debug.Log(e);
             return "not loaded";
@@ -58,9 +58,5 @@ public class Room
 
     private string toStringOrNull(object obj) {
         return obj == null ? "null" : obj.ToString();
-    }
-
-    private string uuidOrNull(String room) {
-        return room == null ? "null" : room;
     }
 }

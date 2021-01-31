@@ -28,6 +28,7 @@ public class Map
         return "Start room: " + startRoom + ", rooms: " + sb.ToString();
     }
 
+    // Assumption: This is all copy-by-reference so we're referring to the same Room objects.
     public Dictionary<string, Room> getRoomByIdMap() {
         if (roomById.Count == 0) {
             rooms.ForEach(room => roomById.Add(room.id, room));

@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
 // Used for testing functions without running the game.
 public class SaveMapMenu : MonoBehaviour
 {
+    // Load the instance in the scene, so that it can see prefabs.
+    private const string MAP_LOADER_INSTANCE_NAME = "MapLoaderInScene";
+    private const string PREFAB_COPY_NAME = "ScriptedRoom(Clone)";
+
     /// Add a context menu named "Do Something" in the inspector
     /// of the attached script.
-    [MenuItem("Window/Load Data")]
+    // [MenuItem("Window/Load Data")]
     public static Map LoadData()
     {
         Debug.Log("Loading map json into memory");
@@ -17,7 +22,7 @@ public class SaveMapMenu : MonoBehaviour
         return map;
     }
 
-    [MenuItem("Window/Save Data")]
+    // [MenuItem("Window/Save Data")]
     public static void SaveData()
     {
         Debug.Log("Saving map data to example_written.json");
@@ -26,7 +31,7 @@ public class SaveMapMenu : MonoBehaviour
         Debug.Log("Reloaded map is: " + Map.ReadFromDataJson("/Data/example_written.json").toString());
     }
 
-    [MenuItem("Window/Load CSV")]
+    // [MenuItem("Window/Load CSV")]
     public static void LoadCSV()
     {
         Debug.Log("Loading CSV");
@@ -37,19 +42,29 @@ public class SaveMapMenu : MonoBehaviour
     public static void LoadWholeMap()
     {
         Debug.Log("Loading Whole Map");
-        new MapLoader().LoadMap();
+        GameObject mapLoaderObject = GameObject.Find(MAP_LOADER_INSTANCE_NAME);
+        MapLoader mapLoader = mapLoaderObject.GetComponent<MapLoader>(); 
+        mapLoader.LoadMap();
     }
 
-    [MenuItem("Window/write a room")]
+    [MenuItem("Window/Delete Scripted Room Clones")]
+    public static void DeleteScriptedRoomClones()
+    {
+        Debug.Log("Deleting scripted room clones.");
+        var objects = GameObject.FindObjectsOfType<GameObject>().Where(obj => obj.name == PREFAB_COPY_NAME);
+        foreach (var prefab in objects)
+        {
+            GameObject.DestroyImmediate(prefab);
+        }
+    }
+
+    // [MenuItem("Window/write a room")]
     public static void WriteARoom()
     {
-//         Debug.Log("Loading Whole Map");
-//         Room room = new Room();
-//         Assets.Scripts.NullablePoint nullable = new Assets.Scripts.NullablePoint();
-// nullable.x = 100.9f;
-// nullable.y = 101.2f;
-//         room.keyLocation = nullable;
-//         Map.WriteARoom(room);
+        Debug.Log("Loading Whole Map");
+        Room room = new Room();
+        Assets.Scripts.NullablePoint nullable = new Assets.Scripts.NullablePoint();
+        Map.WriteARoom(room);
     }
 
 }

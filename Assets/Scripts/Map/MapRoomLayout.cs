@@ -15,7 +15,7 @@ public class MapRoomLayout
     // [0,0]...[0,14] is row 1 (empty)
     // [16,0]...[16,14] is the last row (empty)
     // So starting room (11) is at [12,9].
-    private string[,] mapLayout;
+    public string[,] mapLayout { get; set; }
 
     public static MapRoomLayout ReadFromCSV()
     {
