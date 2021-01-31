@@ -22,6 +22,8 @@ public class MapLoader : MonoBehaviour
     // Place first prefab at these coordinates, then the rest are oriented around that one based on the map CSV.
     private const string MAP_ORIGIN_GAMEOBJECT_NAME = "EntireMap";
 
+    private const string DUCK_CHILD_GAMEOBJECT_NAME = "Kid";
+
     public GameObject roomPrefab; 
 
     public void LoadMap()
@@ -76,9 +78,10 @@ public class MapLoader : MonoBehaviour
             AssignCorrectPrefabPosition(roomBehaviour, originPosition, firstRoomPosition);
 
             CalculateAndSetBackgroundImage(roomBehaviour);
-
             roomPrefabs.Add(room.id, prefabInstance);
         });
+
+        ConditionalSpawnDuckOnPrefabs(roomPrefabs);
 
         return roomPrefabs;
     }
@@ -115,6 +118,20 @@ public class MapLoader : MonoBehaviour
         door.gameObject.SetActive(room.wallDown != "door");
         door = prefabInstance.transform.Find("DoorNorth");
         door.gameObject.SetActive(room.wallUp != "door");
+    }
+
+    private void ConditionalSpawnDuckOnPrefabs(Dictionary<string, GameObject> roomPrefabs)
+    {
+        foreach (var roomPrefab in roomPrefabs.Values)
+        {
+            bool isActive = roomPrefab.GetComponent<RoomBehaviour>().getDuckLocation();
+            Transform duckTransform = roomPrefab.transform.Find(DUCK_CHILD_GAMEOBJECT_NAME);
+            if (duckTransform != null)
+            {
+                GameObject duck = duckTransform.gameObject;
+                duck.SetActive(isActive);
+            }
+        }
     }
 
     /**
