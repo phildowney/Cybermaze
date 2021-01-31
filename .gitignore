@@ -129,3 +129,12 @@ $RECYCLE.BIN/
 *.log
 *.log.*
 **.vscode/**
+
+# Cache files
+./CybermazeMapper/CybermazeMapper/obj/Debug/CybermazeMapper.csproj.CoreCompileInputs.cache
+./CybermazeMapper/CybermazeMapper/obj/Debug/CybermazeMapper.csproj.GenerateResource.cache
+./CybermazeMapper/CybermazeMapper/obj/Debug/CybermazeMapper.csprojAssemblyReference.cache
+./CybermazeMapper/CybermazeMapper/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+./CybermazeMapper/CybermazeMapper/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+./obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+
