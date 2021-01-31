@@ -17,10 +17,10 @@
         "Y": 0
       },
       "wallUp": "door",
-      "wallLeft": "fakeWall",
-      "wallDown": "lockedDoor",
-      "wallRight": "open",
-      "roomUp": "02",
+      "wallLeft": "",
+      "wallDown": "",
+      "wallRight": "",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
@@ -64,13 +64,13 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
-      "wallDown": "",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
-      "roomDown": "00",
+      "roomDown": "",
       "roomRight": ""
     },
     {
@@ -95,7 +95,7 @@
       "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
-      "roomRight": "04"
+      "roomRight": ""
     },
     {
       "id": "4",
@@ -117,7 +117,7 @@
       "wallDown": "",
       "wallRight": "",
       "roomUp": "",
-      "roomLeft": "03",
+      "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
     },
@@ -160,10 +160,10 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
       "wallDown": "",
-      "wallRight": "",
+      "wallRight": "door",
       "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
@@ -184,14 +184,14 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
-      "wallLeft": "",
-      "wallDown": "",
+      "wallUp": "door",
+      "wallLeft": "door",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
-      "roomRight": "08"
+      "roomRight": ""
     },
     {
       "id": "8",
@@ -208,12 +208,12 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
       "wallDown": "",
       "wallRight": "",
       "roomUp": "",
-      "roomLeft": "07",
+      "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
     },
@@ -236,7 +236,7 @@
       "wallLeft": "",
       "wallDown": "",
       "wallRight": "",
-      "roomUp": "15",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
@@ -306,7 +306,7 @@
       },
       "wallUp": "",
       "wallLeft": "",
-      "wallDown": "",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
@@ -328,11 +328,11 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
-      "wallDown": "",
-      "wallRight": "",
-      "roomUp": "21",
+      "wallDown": "door",
+      "wallRight": "door",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
@@ -353,10 +353,10 @@
         "Y": 0
       },
       "wallUp": "",
-      "wallLeft": "",
-      "wallDown": "",
-      "wallRight": "",
-      "roomUp": "22",
+      "wallLeft": "door",
+      "wallDown": "door",
+      "wallRight": "door",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
@@ -377,12 +377,12 @@
         "Y": 0
       },
       "wallUp": "",
-      "wallLeft": "",
+      "wallLeft": "door",
       "wallDown": "",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
-      "roomDown": "09",
+      "roomDown": "",
       "roomRight": ""
     },
     {
@@ -431,7 +431,7 @@
       "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
-      "roomRight": "18"
+      "roomRight": ""
     },
     {
       "id": "18",
@@ -453,7 +453,7 @@
       "wallDown": "",
       "wallRight": "",
       "roomUp": "",
-      "roomLeft": "17",
+      "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
     },
@@ -479,7 +479,7 @@
       "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
-      "roomRight": "20"
+      "roomRight": ""
     },
     {
       "id": "20",
@@ -501,7 +501,7 @@
       "wallDown": "",
       "wallRight": "",
       "roomUp": "",
-      "roomLeft": "19",
+      "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
     },
@@ -520,13 +520,13 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
-      "wallDown": "",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
-      "roomDown": "13",
+      "roomDown": "",
       "roomRight": ""
     },
     {
@@ -550,7 +550,7 @@
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
-      "roomDown": "14",
+      "roomDown": "",
       "roomRight": ""
     },
     {
@@ -808,9 +808,9 @@
         "X": 0,
         "Y": 0
       },
-      "wallUp": "",
+      "wallUp": "door",
       "wallLeft": "",
-      "wallDown": "",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
@@ -1074,7 +1074,7 @@
       },
       "wallUp": "",
       "wallLeft": "",
-      "wallDown": "",
+      "wallDown": "door",
       "wallRight": "",
       "roomUp": "",
       "roomLeft": "",
@@ -2252,7 +2252,7 @@
       "wallLeft": "",
       "wallDown": "",
       "wallRight": "",
-      "roomUp": "97",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""
@@ -2348,7 +2348,7 @@
       "wallLeft": "",
       "wallDown": "",
       "wallRight": "",
-      "roomUp": "93",
+      "roomUp": "",
       "roomLeft": "",
       "roomDown": "",
       "roomRight": ""

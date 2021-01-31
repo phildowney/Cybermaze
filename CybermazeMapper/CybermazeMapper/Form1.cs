@@ -107,28 +107,24 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
                     switch (e.Direction)
                     {
                         case ExitClickedArgs.Directions.North:
-                            map.rooms[int.Parse(clickedRoom.Index)].roomUp = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomDown = clickedRoom.Index;
+                            map.rooms[int.Parse(clickedRoom.Index)].wallUp = "door";
+                            map.rooms[int.Parse(matchingRoom.Index)].wallDown = "door";
                             break;
                         case ExitClickedArgs.Directions.South:
-                            map.rooms[int.Parse(clickedRoom.Index)].roomDown = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomUp = clickedRoom.Index;
+                            map.rooms[int.Parse(clickedRoom.Index)].wallDown = "door";
+                            map.rooms[int.Parse(matchingRoom.Index)].wallUp = "door";
                             break;
                         case ExitClickedArgs.Directions.East:
-                            map.rooms[int.Parse(clickedRoom.Index)].roomRight = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomLeft = clickedRoom.Index;
+                            map.rooms[int.Parse(clickedRoom.Index)].wallRight = "door";
+                            map.rooms[int.Parse(matchingRoom.Index)].wallLeft = "door";
                             break;
                         case ExitClickedArgs.Directions.West:
-                            map.rooms[int.Parse(clickedRoom.Index)].roomLeft = matchingRoom.Index;
-                            map.rooms[int.Parse(matchingRoom.Index)].roomRight = clickedRoom.Index;
+                            map.rooms[int.Parse(clickedRoom.Index)].wallLeft = "door";
+                            map.rooms[int.Parse(matchingRoom.Index)].wallRight = "door";
                             break;
                         default:
                             return;
                     }
-                    
-
-                    //matchingRoom.SetSouth(true);
-                    //clickedRoom.SetNorth(true);
                 }
                 catch (Exception ex)
                 {
@@ -156,7 +152,20 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
             var map = JsonSerializer.Deserialize<Map>(jsonData, options);
 
             // Fix the single-digit room indexes. DON'T @ ME NERDS.
-            map.rooms.ForEach(room => room.id = int.Parse(room.id).ToString());
+            map.rooms.ForEach(room =>
+            {
+                room.id = int.Parse(room.id).ToString();
+                
+                // TODO: Load these into the UI instead of clearing them, eh?
+                room.roomDown = "";
+                room.roomUp = "";
+                room.roomLeft = "";
+                room.roomRight = "";
+                room.wallDown = "";
+                room.wallUp = "";
+                room.wallRight = "";
+                room.wallLeft = "";
+            });
 
             return map;
         }
