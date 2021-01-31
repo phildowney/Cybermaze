@@ -59,11 +59,13 @@ public class MapLoader : MonoBehaviour
         Vector3 originPosition = originGameObject.transform.position;
         Point firstRoomPosition = mapRoomLayout.findRoomPosition("1");
 
-        rooms.ForEach(room => {
+        rooms.ForEach(room =>
+        {
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
             prefabInstance.transform.SetParent(originGameObject.transform);
             prefabInstance.name = "Room " + room.id;
             prefabInstance.tag = "Room Clone";
+            activateWalls(room, prefabInstance);
 
             // Here's where we configure the prefab to have the room data, the correct image, position it correctly in the world, etc.
             // We could also set the tiles (walls/doors/ducks) here, or do that later.
@@ -101,6 +103,18 @@ public class MapLoader : MonoBehaviour
         renderer.sprite = floorSprite;
 
         roomBehaviour.backgroundImageKeyForEditor = imageKey;
+    }
+
+    private void activateWalls(Room room, GameObject prefabInstance)
+    {
+        var door = prefabInstance.transform.Find("DoorWest");
+        door.gameObject.SetActive(room.wallLeft != "door");
+        door = prefabInstance.transform.Find("DoorEast");
+        door.gameObject.SetActive(room.wallRight != "door");
+        door = prefabInstance.transform.Find("DoorSouth");
+        door.gameObject.SetActive(room.wallDown != "door");
+        door = prefabInstance.transform.Find("DoorNorth");
+        door.gameObject.SetActive(room.wallUp != "door");
     }
 
     /**
