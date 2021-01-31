@@ -48,24 +48,24 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
     {
         GlobalData.SelectedTileType = PlaceableTiles.First().TileType;
 
-        for (int i = 0; i < PlaceableTiles.Length; i++)
-        {
-            var tile = PlaceableTiles[i];
-            var tileButton = Instantiate(TileButtonPrefab, new Vector3(0f, 0f, 0f), new Quaternion(), Canvas.transform);
+        //for (int i = 0; i < PlaceableTiles.Length; i++)
+        //{
+        //    var tile = PlaceableTiles[i];
+        //    var tileButton = Instantiate(TileButtonPrefab, new Vector3(0f, 0f, 0f), new Quaternion(), Canvas.transform);
 
-            var size = 75f;
-            var spacing = 15f;
-            var offset = spacing + size / 2f;
+        //    var size = 75f;
+        //    var spacing = 15f;
+        //    var offset = spacing + size / 2f;
 
-            //tileButton.transform.localScale = new Vector3(size, size, 1f);
+        //    //tileButton.transform.localScale = new Vector3(size, size, 1f);
 
-            ((RectTransform)tileButton.transform).anchoredPosition = new Vector3(offset + (size + spacing) * i, offset);
-            tileButton.GetComponent<Image>().sprite = tile.ButtonSprite;
-            tileButton.GetComponent<Button>().onClick.AddListener(() => { GlobalData.SelectedTileType = tile.TileType; });
-            tileButton.GetComponentInChildren<Text>().text = tile.ButtonText; // TODO:  Newline support? Mebbe?
-            tileButton.name = tile.TileType.ToString() + "TileButton";
-            print(tileButton.GetComponentInChildren<Text>().transform.localScale);
-        }
+        //    ((RectTransform)tileButton.transform).anchoredPosition = new Vector3(offset + (size + spacing) * i, offset);
+        //    tileButton.GetComponent<Image>().sprite = tile.ButtonSprite;
+        //    tileButton.GetComponent<Button>().onClick.AddListener(() => { GlobalData.SelectedTileType = tile.TileType; });
+        //    tileButton.GetComponentInChildren<Text>().text = tile.ButtonText; // TODO:  Newline support? Mebbe?
+        //    tileButton.name = tile.TileType.ToString() + "TileButton";
+        //    print(tileButton.GetComponentInChildren<Text>().transform.localScale);
+        //}
 
         // Load the level
 
@@ -104,7 +104,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
         FindObjectOfType<Camera>().GetComponentInChildren<SmoothCamera2D>().target = _playerTile.transform;
 
         var KeysText = GameObject.FindGameObjectWithTag("KeysTextTag").GetComponent<Text>();
-        KeysText.text = string.Format("Keys: {0}", GlobalData.KeyCount);
+        KeysText.text = string.Format("Ducklings: {0}", GlobalData.KeyCount);
 
         AudioSource audio = gameObject.GetComponent<AudioSource>();
         audio.Play();
@@ -161,7 +161,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
         PlayerController.HandePlayerMoveInput(_playerTile);
 
         var KeysText = GameObject.FindGameObjectWithTag("KeysTextTag").GetComponent<Text>();
-        KeysText.text = string.Format("Keys: {0}", GlobalData.KeyCount);
+        KeysText.text = string.Format("Ducklings: {0}", GlobalData.KeyCount);
     }
 
     public void AddTileAtWorldPosition(Vector3 mouseWorldPosition)

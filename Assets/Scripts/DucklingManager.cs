@@ -57,6 +57,7 @@ public class DucklingManager : MonoBehaviour
     {
         if (other.CompareTag("Duckling"))
         {
+            GlobalData.KeyCount++;
             audio.Play();
             other.enabled = false;
             ducklings.Add(other.gameObject);
