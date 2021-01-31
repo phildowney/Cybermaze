@@ -17,13 +17,20 @@ public class RoomBehaviour : MonoBehaviour
     public double xPositionCopyForEditor;
     public double yPositionCopyForEditor;
     public string roomIdCopyForEditor;
+    public string backgroundImageKeyForEditor;
 
     public string getId() {
         return room.id;
     }
 
-    public string getBackgroundImage() {
-        return room.backgroundImage;
+    public string CalculateBackgroundImage()
+    {
+        var north = room.wallUp != string.Empty ? "n" : "";
+        var east = room.wallRight != string.Empty ? "e" : "";
+        var south = room.wallDown != string.Empty ? "s" : "";
+        var west = room.wallLeft != string.Empty ? "w" : "";
+
+        return north + east + south + west;
     }
 
     public Point getCameraLocation() {

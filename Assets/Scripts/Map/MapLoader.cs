@@ -10,6 +10,8 @@ using UnityEngine;
 // https://docs.unity3d.com/Manual/class-ScriptableObject.html
 public class MapLoader : MonoBehaviour
 {
+    private Sprite[] allSprites;
+    
     // How big are the Room Prefabs supposed to be, and where do we place them next to each other?
     // e.g. prefab 1 at 0, prefab 2 at 1921, prefab 3 at 1920*3+2, etc.
     // TODO: Scale appropriately?
@@ -23,6 +25,9 @@ public class MapLoader : MonoBehaviour
 
     public void LoadMap()
     {
+        // Load floor sprites.
+        this.allSprites = Resources.LoadAll<Sprite>("Sprites");
+
         // Load data files
         MapRoomLayout mapRoomLayout = MapRoomLayout.ReadFromCSV();
         Map map = Map.ReadMapFile();
@@ -67,10 +72,25 @@ public class MapLoader : MonoBehaviour
             roomBehaviour.mapArrayPosition = mapRoomLayout.findRoomPosition(room.id);
             AssignCorrectPrefabPosition(roomBehaviour, originPosition, firstRoomPosition);
 
+            CalculateAndSetBackgroundImage(roomBehaviour);
+
             roomPrefabs.Add(room.id, prefabInstance);
         });
 
         return roomPrefabs;
+    }
+
+    private void CalculateAndSetBackgroundImage(RoomBehaviour roomBehaviour)
+    { 
+        string imageKey = roomBehaviour.CalculateBackgroundImage();
+        GameObject roomPrefab = roomBehaviour.gameObject;
+        SpriteRenderer renderer = roomPrefab.GetComponent<SpriteRenderer>();
+        renderer.sprite = Array.Find<Sprite>(
+            this.allSprites,
+            sprite => sprite.name == imageKey
+        );
+
+        roomBehaviour.backgroundImageKeyForEditor = imageKey;
     }
 
     /**
