@@ -51,7 +51,7 @@ public class SaveMapMenu : MonoBehaviour
     public static void DeleteScriptedRoomClones()
     {
         Debug.Log("Deleting scripted room clones.");
-        var objects = GameObject.FindObjectsOfType<GameObject>().Where(obj => obj.name == PREFAB_COPY_NAME);
+        var objects = GameObject.FindGameObjectsWithTag("Room Clone");
         foreach (var prefab in objects)
         {
             GameObject.DestroyImmediate(prefab);

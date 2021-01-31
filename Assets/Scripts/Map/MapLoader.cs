@@ -56,6 +56,7 @@ public class MapLoader : MonoBehaviour
         rooms.ForEach(room => {
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
             prefabInstance.transform.SetParent(originGameObject.transform);
+            prefabInstance.name = "Room " + room.id;
 
             // Here's where we configure the prefab to have the room data, the correct image, position it correctly in the world, etc.
             // We could also set the tiles (walls/doors/ducks) here, or do that later.
@@ -71,7 +72,9 @@ public class MapLoader : MonoBehaviour
         return roomPrefabs;
     }
 
-    // Orient prefabs around the position of room 1 
+    // The CSV is a 0-indexed array, topleft [0,0] to bottom right [0,0],
+    // but the Unity coordinate system is bottom left [0,0] to top-right [99,99]
+    // We need to invert our CSV y-value when calculating where to place the rooms.
     private void AssignCorrectPrefabPosition(
         RoomBehaviour roomBehaviour,
         Vector3 originPosition,
@@ -81,7 +84,7 @@ public class MapLoader : MonoBehaviour
 
         // A room at 3,5 is 3 map sizes to the right of 0, 5 map sizes up from 0, 
         float desiredRoomOriginX = (float)(mapArrayPosition.X * ROOM_SIZE_X);// + mapArrayPosition.X; for off-by-one offset?
-        float desiredRoomOriginY = (float)(mapArrayPosition.Y * ROOM_SIZE_Y);// + mapArrayPosition.Y;
+        float desiredRoomOriginY = (float)((mapArrayPosition.Y) * ROOM_SIZE_Y);// + mapArrayPosition.Y;
 
         GameObject roomPrefab = roomBehaviour.gameObject;
         Vector3 newPosition = new Vector3(desiredRoomOriginX, desiredRoomOriginY, roomPrefab.transform.position.z);
