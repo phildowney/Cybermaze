@@ -45,7 +45,12 @@ public class Map
 
         Debug.Log("json is: " + jsonData);
 
-        return JsonUtility.FromJson<Map>(jsonData);
+        Map map = JsonUtility.FromJson<Map>(jsonData);
+
+        // Fix the single-digit room indexes. DON'T @ ME NERDS.
+        map.rooms.ForEach(room => room.id = int.Parse(room.id).ToString());
+
+        return map;
     }
 
     //

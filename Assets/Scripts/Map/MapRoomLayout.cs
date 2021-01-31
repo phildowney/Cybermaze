@@ -12,10 +12,38 @@ public class MapRoomLayout
 {
     private const string CSV_FILE_PATH = "/Data/map.csv";
 
+    private const string EMPTY_CSV_FIELD = "__";
+
     // [0,0]...[0,14] is row 1 (empty)
     // [16,0]...[16,14] is the last row (empty)
     // So starting room (11) is at [12,9].
     public string[,] mapLayout { get; set; }
+
+    public Point findRoomPosition(string roomId)
+    {
+        Point index = new Point();
+
+        int w = mapLayout.GetLength(0); // width
+        int h = mapLayout.GetLength(1); // height
+
+        for (int x = 0; x < w; ++x)
+        {
+            for (int y = 0; y < h; ++y)
+            {
+                if (mapLayout[x, y].Equals(roomId))
+                {
+                    index.X = x;
+                    index.Y = y;
+                    return index;
+                }
+            }
+        }
+
+        index.X = -1;
+        index.Y = -1;
+
+        return index;
+    }
 
     public static MapRoomLayout ReadFromCSV()
     {
@@ -25,10 +53,27 @@ public class MapRoomLayout
 
         Debug.Log("map csv is: " + mapLayout.ToString());
 
+        sanitizeSingleDigitNumbers(mapLayout);
+
         MapRoomLayout mapRoomLayout = new MapRoomLayout();
         mapRoomLayout.mapLayout = mapLayout;
 
         return mapRoomLayout;
+    }
+
+    private static void sanitizeSingleDigitNumbers(string[,] map)
+    {
+        for (int i=0; i < map.GetLength(0); i++)
+        {
+            for (int j=0; j < map.GetLength(1); j++)
+            {
+                string cell = map[i,j];
+                if (cell != EMPTY_CSV_FIELD)
+                {
+                    map[i,j] = int.Parse(cell).ToString();
+                }
+            }
+        }
     }
 
     private static T[,] To2D<T>(T[][] source)
