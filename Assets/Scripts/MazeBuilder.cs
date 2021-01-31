@@ -105,6 +105,9 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
 
         var KeysText = GameObject.FindGameObjectWithTag("KeysTextTag").GetComponent<Text>();
         KeysText.text = string.Format("Keys: {0}", GlobalData.KeyCount);
+
+        AudioSource audio = gameObject.GetComponent<AudioSource>();
+        audio.Play();
     }
 
     private void DrawLevel()
