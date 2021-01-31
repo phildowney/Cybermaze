@@ -24,26 +24,29 @@ public class DucklingManager : MonoBehaviour
 
         var i = 1;
 
+        Vector3 lastDuckPosition = gameObject.transform.position;
         foreach (var duckling in ducklings)
         {
             Animator anim = duckling.GetComponent<Animator>();
 
-            Vector3 displacement = gameObject.transform.position - duckling.transform.position;
-            Vector3 followOffset = displacement.normalized * minimumDistance * i;
+            Vector3 displacement = lastDuckPosition - duckling.transform.position;
+            Vector3 followOffset = displacement.normalized * minimumDistance;
             Vector3 target = displacement - followOffset;
 
             if (target.magnitude > followOffset.magnitude)
             {
                 duckling.transform.position += target * Time.deltaTime * moveSpeed;
+                anim.SetFloat("MoveX", target.x / Mathf.Abs(target.x));
+                anim.SetFloat("MoveY", target.y / Mathf.Abs(target.y));
+                duckling.transform.position += new Vector3(0, 2 * jumpHeight * Mathf.PingPong(jumpSpeed * (Time.time + i * Time.time / 10), 1) - jumpHeight);
+            }
+            else
+            {
+                anim.SetFloat("MoveX", 0);
+                anim.SetFloat("MoveY", 0);
             }
 
-            anim.SetFloat("MoveX", duckAnimator.GetFloat("MoveX"));
-            anim.SetFloat("MoveY", duckAnimator.GetFloat("MoveY"));
-
-            if (duckAnimator.GetFloat("MoveX") != 0 && duckAnimator.GetFloat("MoveY") != 0) {
-                duckling.transform.position += new Vector3(0, 2 * jumpHeight * Mathf.PingPong(jumpSpeed * Time.time, 1) - jumpHeight);
-            }
-
+            lastDuckPosition = duckling.transform.position;
             i += 1;
         }
 
