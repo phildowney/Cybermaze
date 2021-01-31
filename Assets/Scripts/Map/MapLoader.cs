@@ -73,6 +73,35 @@ public class MapLoader : MonoBehaviour
         return roomPrefabs;
     }
 
+    /**
+    * Alright, so here's what's going on.
+    *
+    * The map CSV is an array where the top-left is 0,0, the bottom left is 0,16, the top-right is 15,0
+    * and the bottom-right is 15,16.
+    *
+    * However, the 2D array in csharp is actually [y,x].
+    * Then, finally, the Unity coordinate system is bottom-left = 0,0, and top-right = 15,16.
+    *
+    * So to convert our array coordinates to Unity coordinates, we need to flip the array (Y,X) to X,Y,
+    * and then we need to invert the Y-values by subtracting from 1 (because in our array, increasing Y goes 'down',
+    * but in Unity, increasing Y goes upwards.)
+    *
+    * We multiply the "Y in array, but it's actually X" by the X-multiplier, and the "X in the array, but it's actually Y"
+    * by the Y multiplier.
+    *
+    * You can instead thing of roomArrayPosition.X as roomArrayPosition.firstArray, which is the row/y-value array.
+    * Vice-versa for X.
+    */
+    public Point CalculateUnityPosition(Point roomArrayPosition)
+    {
+        // NOTE: The array is actually [Y,X] so we need to flip them when converting to Unity space!
+
+        // A room at 3,5 is 3 map sizes to the right of 0, 5 map sizes up from 0, 
+        float desiredRoomOriginX = (float)(roomArrayPosition.Y * ROOM_SIZE_X);// + mapArrayPosition.X; for off-by-one offset?
+        float desiredRoomOriginY = (float)((1 - roomArrayPosition.X) * ROOM_SIZE_Y);// + mapArrayPosition.Y;
+        return new Point { X = desiredRoomOriginX, Y = desiredRoomOriginY };
+    }
+
     // The CSV is a 0-indexed array, topleft [0,0] to bottom right [0,0],
     // but the Unity coordinate system is bottom left [0,0] to top-right [99,99]
     // We need to invert our CSV y-value when calculating where to place the rooms.
@@ -82,13 +111,10 @@ public class MapLoader : MonoBehaviour
         Point firstRoomPosition
     ) {
         Point mapArrayPosition = roomBehaviour.mapArrayPosition;
-
-        // A room at 3,5 is 3 map sizes to the right of 0, 5 map sizes up from 0, 
-        float desiredRoomOriginX = (float)(mapArrayPosition.X * ROOM_SIZE_X);// + mapArrayPosition.X; for off-by-one offset?
-        float desiredRoomOriginY = (float)((mapArrayPosition.Y) * ROOM_SIZE_Y);// + mapArrayPosition.Y;
+        Point unityPosition = CalculateUnityPosition(mapArrayPosition);
 
         GameObject roomPrefab = roomBehaviour.gameObject;
-        Vector3 newPosition = new Vector3(desiredRoomOriginX, desiredRoomOriginY, roomPrefab.transform.position.z);
+        Vector3 newPosition = new Vector3((float)unityPosition.X, (float)unityPosition.Y, roomPrefab.transform.position.z);
         roomPrefab.transform.position = newPosition;
 
         roomBehaviour.xPositionCopyForEditor = roomBehaviour.mapArrayPosition.X;
