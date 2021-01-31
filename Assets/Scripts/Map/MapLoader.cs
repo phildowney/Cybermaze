@@ -55,11 +55,13 @@ public class MapLoader : MonoBehaviour
 
         rooms.ForEach(room => {
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
+            prefabInstance.transform.SetParent(originGameObject.transform);
 
             // Here's where we configure the prefab to have the room data, the correct image, position it correctly in the world, etc.
             // We could also set the tiles (walls/doors/ducks) here, or do that later.
             RoomBehaviour roomBehaviour = prefabInstance.GetComponent<RoomBehaviour>();
             roomBehaviour.room = room;
+            roomBehaviour.roomIdCopyForEditor = room.id;
             roomBehaviour.mapArrayPosition = mapRoomLayout.findRoomPosition(room.id);
             AssignCorrectPrefabPosition(roomBehaviour, originPosition, firstRoomPosition);
 
@@ -83,6 +85,9 @@ public class MapLoader : MonoBehaviour
 
         GameObject roomPrefab = roomBehaviour.gameObject;
         Vector3 newPosition = new Vector3(desiredRoomOriginX, desiredRoomOriginY, roomPrefab.transform.position.z);
-        roomPrefab.transform.position = newPosition; 
+        roomPrefab.transform.position = newPosition;
+
+        roomBehaviour.xPositionCopyForEditor = roomBehaviour.mapArrayPosition.X;
+        roomBehaviour.yPositionCopyForEditor = roomBehaviour.mapArrayPosition.Y;
     }
 }
