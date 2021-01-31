@@ -11,6 +11,7 @@ using UnityEngine;
 public class MapLoader : MonoBehaviour
 {
     private Sprite[] allSprites;
+    private const string FLOOR_NOT_FOUND_SPRITE_NAME = "not-found";
     
     // How big are the Room Prefabs supposed to be, and where do we place them next to each other?
     // e.g. prefab 1 at 0, prefab 2 at 1921, prefab 3 at 1920*3+2, etc.
@@ -85,10 +86,19 @@ public class MapLoader : MonoBehaviour
         string imageKey = roomBehaviour.CalculateBackgroundImage();
         GameObject roomPrefab = roomBehaviour.gameObject;
         SpriteRenderer renderer = roomPrefab.GetComponent<SpriteRenderer>();
-        renderer.sprite = Array.Find<Sprite>(
+        Sprite floorSprite = Array.Find<Sprite>(
             this.allSprites,
             sprite => sprite.name == imageKey
         );
+
+        if (floorSprite == null) {
+            floorSprite = Array.Find<Sprite>(
+                this.allSprites,
+                sprite => sprite.name == FLOOR_NOT_FOUND_SPRITE_NAME
+            );
+        }
+
+        renderer.sprite = floorSprite;
 
         roomBehaviour.backgroundImageKeyForEditor = imageKey;
     }
