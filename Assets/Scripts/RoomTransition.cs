@@ -37,7 +37,7 @@ public class RoomTransition : MonoBehaviour
             float percentageComplete = direction == Direction.North || direction == Direction.South
                 ? (timeSinceStarted / timeTakenDuringLerp)
                 : (timeSinceStarted / timeTakenDuringLerp) * (9f / 16f);
-            Debug.Log($"percentageComplete: {percentageComplete}");
+            // Debug.Log($"percentageComplete: {percentageComplete}");
 
             Camera.main.transform.position = Vector3.Lerp(cameraStartingPosition, cameraEndPosition, percentageComplete);
             playerObject.transform.position = Vector3.Lerp(playerStartingPosition, playerEndPosition, percentageComplete);
@@ -55,7 +55,7 @@ public class RoomTransition : MonoBehaviour
         {
             playerObject = GlobalData.PlayerObject;
 
-            Debug.Log("whaddup");
+            // Debug.Log("whaddup");
             cameraStartingPosition = Camera.main.transform.position;
             playerStartingPosition = playerObject.transform.position;
 
