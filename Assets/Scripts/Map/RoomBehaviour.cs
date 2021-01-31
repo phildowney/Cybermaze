@@ -10,6 +10,8 @@ public class RoomBehaviour : MonoBehaviour
 {
     public Room room { get; set; }
 
+    public Point mapArrayPosition { get; set; }
+
     public string getId() {
         return room.id;
     }

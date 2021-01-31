@@ -24,7 +24,7 @@ public class MapLoader : MonoBehaviour
         // TODO: Where to store this data?
 
         // Construct behaviours/prefabs from data files
-        Dictionary<string, GameObject> roomPrefabs = createRoomPrefabsForData(map.rooms);
+        Dictionary<string, GameObject> roomPrefabs = createRoomPrefabsForData(map.rooms, mapRoomLayout);
 
         Debug.Log("Done creating Map behaviours.");
     }
@@ -32,17 +32,19 @@ public class MapLoader : MonoBehaviour
     // TODO: Layout on map.
     // TODO: Set positions internally (Walls, etc.)
     // TODO: Anchor to parent gameobject (camera? Scene?)
+    // TODO: Set prefab's background image correctly.
     // https://stackoverflow.com/questions/49186166/unity-how-to-instantiate-a-prefab-by-string-name-to-certain-location
     // prefabInstance.transform.position = new Vector3(100, 200, 100);
     // prefabInstance.SetParent(someGameObject.transform);
     // TODO: If a Room prefab is somewhere on a scene, we could pass that in to this class instead of requiring it in Resources
-    private Dictionary<string, GameObject> createRoomPrefabsForData(List<Room> rooms) {
+    private Dictionary<string, GameObject> createRoomPrefabsForData(List<Room> rooms, MapRoomLayout mapRoomLayout) {
         Dictionary<string, GameObject> roomPrefabs = new Dictionary<string, GameObject>();
 
         rooms.ForEach(room => {
             var prefabInstance = UnityEngine.Object.Instantiate<GameObject>(roomPrefab);
             RoomBehaviour roomBehaviour = prefabInstance.GetComponent<RoomBehaviour>();
             roomBehaviour.room = room;
+            roomBehaviour.mapArrayPosition = mapRoomLayout.findRoomPosition(room.id);
             roomPrefabs.Add(room.id, prefabInstance);
         });
 
