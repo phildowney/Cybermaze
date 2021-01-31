@@ -12,7 +12,7 @@ public class Room
     
     public CybermazeMapper.UnityPoint keyLocation;
 
-    public CybermazeMapper.UnityPoint duckLocation;
+    public bool duckLocation;
 
     // TODO: Convert to enum
     public string wallUp;
@@ -35,7 +35,7 @@ public class Room
     public string toString() {
         try {
             return "id: " + id + " backgroundImage: " + backgroundImage + " cameraLocation: " + toStringOrNull(cameraLocation) + " keyLocation: " +
-                toStringOrNull(keyLocation) + " duckLocation " + toStringOrNull(duckLocation) + " wallUp " + wallUp + " wallLeft " + wallLeft + " wallDown " +
+                toStringOrNull(keyLocation) + " duckLocation " + duckLocation + " wallUp " + wallUp + " wallLeft " + wallLeft + " wallDown " +
                 wallDown + " wallRight " + wallRight + " roomUp " + roomUp + " roomLeft " + roomLeft +
                 " roomDown " + roomDown + " roomRight " + roomRight;
         } catch (NullReferenceException e) {

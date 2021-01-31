@@ -58,12 +58,20 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
                     roomControl.Index = room;
                     roomControl.BackColor = roomControl.Empty ? System.Drawing.Color.Pink : System.Drawing.Color.Red;
                     roomControl.ExitClicked += RoomControl_ExitClicked;
+                    roomControl.DuckClicked += RoomControl_DuckClicked;
                     roomControl.Location = new System.Drawing.Point(i * 50 + 5, j * 50 + 5);
                     roomControl.Row = j;
                     roomControl.Col = i;
                     rooms.Add(roomControl);
                 }
             }
+        }
+
+        private void RoomControl_DuckClicked(object sender, EventArgs e)
+        {
+            var clickedRoom = (RoomControl)sender;
+
+            map.rooms[int.Parse(clickedRoom.Index)].duckLocation = clickedRoom.HasDuck;
         }
 
         private void RoomControl_ExitClicked(object sender, ExitClickedArgs e)
@@ -157,14 +165,14 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
                 room.id = int.Parse(room.id).ToString();
                 
                 // TODO: Load these into the UI instead of clearing them, eh?
-                room.roomDown = "";
-                room.roomUp = "";
-                room.roomLeft = "";
-                room.roomRight = "";
-                room.wallDown = "";
-                room.wallUp = "";
-                room.wallRight = "";
-                room.wallLeft = "";
+                //room.roomDown = "";
+                //room.roomUp = "";
+                //room.roomLeft = "";
+                //room.roomRight = "";
+                //room.wallDown = "";
+                //room.wallUp = "";
+                //room.wallRight = "";
+                //room.wallLeft = "";
             });
 
             return map;
@@ -225,12 +233,6 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var jsonString = JsonSerializer.Serialize(map, new JsonSerializerOptions { IncludeFields = true, WriteIndented = true });
-            File.WriteAllText("rooms.json", jsonString);
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             foreach(var room in map.rooms)
@@ -238,6 +240,12 @@ __,__,__,__,__,__,__,__,__,__,__,__,__,__,__";
                 var id = room.id;
                 var bgimg = room.GetBackgroundImage();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var jsonString = JsonSerializer.Serialize(map, new JsonSerializerOptions { IncludeFields = true, WriteIndented = true });
+            File.WriteAllText("rooms.json", jsonString);
         }
     }
 

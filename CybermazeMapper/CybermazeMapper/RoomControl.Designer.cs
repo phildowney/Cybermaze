@@ -90,6 +90,7 @@ namespace CybermazeMapper
             this.labelNumber.TabIndex = 5;
             this.labelNumber.Text = "__";
             this.labelNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNumber.Click += new System.EventHandler(this.labelNumber_Click);
             // 
             // RoomControl
             // 

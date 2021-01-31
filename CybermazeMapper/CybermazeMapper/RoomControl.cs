@@ -15,8 +15,10 @@ namespace CybermazeMapper
     public partial class RoomControl : UserControl
     {
         private string index;
+        private bool hasDuck;
 
         public event EventHandler<ExitClickedArgs> ExitClicked;
+        public event EventHandler<EventArgs> DuckClicked;
 
         public RoomControl()
         {
@@ -26,7 +28,8 @@ namespace CybermazeMapper
         public int Row { get; set; }
         public int Col { get; set; }
         public bool Empty { get; internal set; }
-        public string Index { 
+        public string Index
+        {
             get => index;
             internal set
             {
@@ -80,6 +83,22 @@ namespace CybermazeMapper
         private void buttonWest_Click(object sender, EventArgs e)
         {
             ExitClicked?.Invoke(this, new ExitClickedArgs() { Direction = ExitClickedArgs.Directions.West });
+        }
+
+        private void labelNumber_Click(object sender, EventArgs e)
+        {
+            HasDuck = !HasDuck;
+            DuckClicked?.Invoke(this, new EventArgs());
+        }
+
+        public bool HasDuck
+        {
+            get => hasDuck;
+            set
+            {
+                hasDuck = value;
+                BackColor = hasDuck ? Color.Yellow : Color.Red;
+            }
         }
     }
 
