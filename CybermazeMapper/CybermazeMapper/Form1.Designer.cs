@@ -34,11 +34,12 @@ namespace CybermazeMapper
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1277, 12);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Location = new System.Drawing.Point(749, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(44, 852);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Write to JSON";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -46,7 +47,7 @@ namespace CybermazeMapper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1364, 828);
+            this.ClientSize = new System.Drawing.Size(793, 852);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
