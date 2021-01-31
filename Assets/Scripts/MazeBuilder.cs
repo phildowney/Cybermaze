@@ -91,7 +91,7 @@ public class MazeBuilder : MonoBehaviour, IMazeBuilder
             }
         }
 
-        GlobalData.PlayerLocation += new Vector3(0.5f, 0.5f);
+        GlobalData.PlayerLocation += new Vector3(99f, 12f);
 
         _playerTile = Instantiate(PlayerPrefab, GlobalData.PlayerLocation, new Quaternion());
 
